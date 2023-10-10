@@ -347,6 +347,13 @@ impl borsh::de::BorshDeserialize for Metadata {
         let md = meta_deser_unchecked(buf)?;
         Ok(md)
     }
+
+    fn deserialize_reader<R: borsh::maybestd::io::Read>(reader: &mut R) -> borsh::maybestd::io::Result<Self> {
+        let mut buf = Vec::new();
+        reader.read_to_end(&mut buf)?;
+        let md = meta_deser_unchecked(&mut buf.as_slice())?;
+        Ok(md)
+    }
 }
 
 #[repr(C)]
