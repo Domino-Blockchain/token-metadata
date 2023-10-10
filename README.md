@@ -28,7 +28,7 @@ cd ../mpl-token-metadata
 
 cargo install cargo-wasi
 cd programs/token-metadata/program
-cargo-wasi -- build --release
+cargo wasi build --release
 
 cd ../domichain
 cargo build --release
