@@ -16,6 +16,29 @@
 
 ## Getting Started
 
+### Domichain
+```sh
+# Clone dependencies
+cd ..
+git clone https://Domino-Blockchain/domichain.git
+git clone https://Domino-Blockchain/domichain-program-library.git
+cd domichain-program-library
+git switch v1.16.1
+cd ../mpl-token-metadata
+
+cargo install cargo-wasi
+cd programs/token-metadata/program
+cargo-wasi -- build --release
+
+cd ../domichain
+cargo build --release
+RUST_LOG=OFF target/release/domichain-test-validator \
+  --wasm-program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s \
+  ../mpl-token-metadata/programs/token-metadata/target/wasm32-wasi/release/token_metadata.wasm \
+  --reset \
+  --log
+```
+
 The packages below can be use to interact with Token Metadata program.
 
 ### TypeScript
