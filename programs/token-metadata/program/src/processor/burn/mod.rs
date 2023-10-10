@@ -8,7 +8,7 @@ use mpl_utils::{
         TokenCloseParams,
     },
 };
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, program_error::ProgramError,
     program_pack::Pack, pubkey::Pubkey, system_program, sysvar,
 };

@@ -1,4 +1,4 @@
-use solana_program::pubkey::Pubkey;
+use domichain_program::pubkey::Pubkey;
 
 use crate::state::{EscrowAuthority, ESCROW_POSTFIX, PREFIX};
 

@@ -1,5 +1,5 @@
 use mpl_utils::{assert_signer, close_account_raw};
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, pubkey::Pubkey, system_program,
 };
 

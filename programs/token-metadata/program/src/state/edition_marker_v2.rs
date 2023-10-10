@@ -1,4 +1,4 @@
-use solana_program::program_memory::sol_memcpy;
+use domichain_program::program_memory::sol_memcpy;
 
 use super::*;
 

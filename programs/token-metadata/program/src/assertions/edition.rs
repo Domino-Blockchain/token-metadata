@@ -1,4 +1,4 @@
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, program_option::COption,
     program_pack::Pack, pubkey::Pubkey,
 };

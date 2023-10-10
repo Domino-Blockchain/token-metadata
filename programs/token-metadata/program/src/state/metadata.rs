@@ -394,8 +394,8 @@ pub enum ProgrammableConfig {
 #[cfg(test)]
 mod tests {
     use borsh::BorshDeserialize;
-    use solana_program::account_info::AccountInfo;
-    use solana_sdk::{signature::Keypair, signer::Signer};
+    use domichain_program::account_info::AccountInfo;
+    use domichain_sdk::{signature::Keypair, signer::Signer};
 
     use crate::{
         error::MetadataError,

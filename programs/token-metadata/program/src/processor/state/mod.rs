@@ -3,7 +3,7 @@ mod unlock;
 
 pub use lock::*;
 use mpl_utils::assert_signer;
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, program::invoke,
     program_error::ProgramError, program_pack::Pack, pubkey::Pubkey, system_program, sysvar,
 };

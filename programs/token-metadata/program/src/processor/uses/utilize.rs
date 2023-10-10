@@ -2,7 +2,7 @@ use mpl_utils::{
     assert_signer,
     token::{spl_token_burn, TokenBurnParams},
 };
-use solana_program::{
+use domichain_program::{
     account_info::{next_account_info, AccountInfo},
     entrypoint::ProgramResult,
     pubkey::Pubkey,

@@ -23,7 +23,7 @@ pub use metadata::*;
 use mpl_token_auth_rules::payload::Payload;
 #[cfg(feature = "serde-feature")]
 use serde::{Deserialize, Serialize};
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, msg, program_error::ProgramError,
     pubkey::Pubkey,
 };
@@ -394,7 +394,7 @@ macro_rules! all_account_infos {
     ($accounts:expr, $($account:ident),*) => {
         let [$($account),*] = match $accounts {
             [$($account),*, ..] => [$($account),*],
-            _ => return Err(solana_program::program_error::ProgramError::NotEnoughAccountKeys),
+            _ => return Err(domichain_program::program_error::ProgramError::NotEnoughAccountKeys),
         };
     };
 }

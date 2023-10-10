@@ -3,7 +3,7 @@ use mpl_token_auth_rules::{
     payload::PayloadType,
 };
 use mpl_utils::{create_or_allocate_account_raw, token::TokenTransferParams};
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, program::invoke_signed,
     program_error::ProgramError, program_option::COption, pubkey::Pubkey,
 };

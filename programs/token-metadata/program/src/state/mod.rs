@@ -38,7 +38,7 @@ use num_traits::FromPrimitive;
 pub use programmable::*;
 pub use reservation::*;
 use shank::ShankAccount;
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, program_error::ProgramError, pubkey,
     pubkey::Pubkey,
 };

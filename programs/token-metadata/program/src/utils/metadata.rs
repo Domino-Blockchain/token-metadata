@@ -1,6 +1,6 @@
 use borsh::{maybestd::io::Error as BorshError, BorshDeserialize};
 use mpl_utils::{create_or_allocate_account_raw, token::get_mint_authority};
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, program_option::COption, pubkey::Pubkey,
 };
 
@@ -277,7 +277,7 @@ pub fn clean_write_metadata(
 
 #[cfg(test)]
 pub mod tests {
-    use solana_program::pubkey;
+    use domichain_program::pubkey;
 
     use super::*;
     pub use crate::{state::Creator, utils::puff_out_data_fields};

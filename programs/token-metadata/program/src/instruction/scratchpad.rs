@@ -17,7 +17,7 @@ impl UpdateAccounts {
             AccountMeta::new(self.metadata_account, false),
             AccountMeta::new(self.master_edition_account, false),
             AccountMeta::new(self.mint_account, false),
-            AccountMeta::new_readonly(solana_program::system_program::ID, false),
+            AccountMeta::new_readonly(domichain_program::system_program::ID, false),
             AccountMeta::new_readonly(sysvar::instructions::ID, false),
         ];
         if let Some(new_update_authority) = self.new_update_authority {

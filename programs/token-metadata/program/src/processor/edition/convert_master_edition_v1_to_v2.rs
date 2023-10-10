@@ -1,4 +1,4 @@
-use solana_program::{account_info::AccountInfo, entrypoint::ProgramResult, pubkey::Pubkey};
+use domichain_program::{account_info::AccountInfo, entrypoint::ProgramResult, pubkey::Pubkey};
 use spl_token::state::Mint;
 
 use crate::{

@@ -1,5 +1,5 @@
 use mpl_utils::token::get_mint_supply;
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo,
     entrypoint::ProgramResult,
     program::invoke,

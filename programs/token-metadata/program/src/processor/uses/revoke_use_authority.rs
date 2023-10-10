@@ -1,5 +1,5 @@
 use mpl_utils::assert_signer;
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, program::invoke, pubkey::Pubkey,
 };
 use spl_token::instruction::revoke;

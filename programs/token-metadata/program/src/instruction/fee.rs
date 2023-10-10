@@ -1,4 +1,4 @@
-use solana_program::{
+use domichain_program::{
     instruction::{AccountMeta, Instruction},
     pubkey::Pubkey,
 };

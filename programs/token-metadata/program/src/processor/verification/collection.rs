@@ -9,7 +9,7 @@ use crate::{
     utils::{clean_write_metadata, decrement_collection_size, increment_collection_size},
 };
 use mpl_utils::assert_signer;
-use solana_program::{entrypoint::ProgramResult, pubkey::Pubkey};
+use domichain_program::{entrypoint::ProgramResult, pubkey::Pubkey};
 
 pub(crate) fn verify_collection_v1(program_id: &Pubkey, ctx: Context<Verify>) -> ProgramResult {
     // Assert program ownership/signers.

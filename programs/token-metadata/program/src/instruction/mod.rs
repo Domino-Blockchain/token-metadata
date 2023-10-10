@@ -835,5 +835,5 @@ pub struct Context<T> {
 }
 
 pub trait InstructionBuilder {
-    fn instruction(&self) -> solana_program::instruction::Instruction;
+    fn instruction(&self) -> domichain_program::instruction::Instruction;
 }

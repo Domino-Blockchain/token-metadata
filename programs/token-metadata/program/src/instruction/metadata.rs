@@ -1,5 +1,5 @@
 use borsh::{BorshDeserialize, BorshSerialize};
-use solana_program::{
+use domichain_program::{
     instruction::{AccountMeta, Instruction},
     pubkey::Pubkey,
     system_program,
@@ -633,7 +633,7 @@ pub fn update_primary_sale_happened_via_token(
 ///   7. `[]` Instructions sysvar account
 ///   8. `[]` SPL Token program
 impl InstructionBuilder for super::builders::Create {
-    fn instruction(&self) -> solana_program::instruction::Instruction {
+    fn instruction(&self) -> domichain_program::instruction::Instruction {
         let accounts = vec![
             AccountMeta::new(self.metadata, false),
             // checks whether we have a master edition
@@ -681,7 +681,7 @@ impl InstructionBuilder for super::builders::Create {
 ///   13. `[optional]` Token Authorization Rules program
 ///   14. `[optional]` Token Authorization Rules account
 impl InstructionBuilder for super::builders::Mint {
-    fn instruction(&self) -> solana_program::instruction::Instruction {
+    fn instruction(&self) -> domichain_program::instruction::Instruction {
         let mut accounts = vec![
             AccountMeta::new(self.token, false),
             AccountMeta::new_readonly(self.token_owner.unwrap_or(crate::ID), false),
@@ -746,7 +746,7 @@ impl InstructionBuilder for super::builders::Mint {
 ///   15. `[optional]` Token Authorization Rules Program
 ///   16. `[optional]` Token Authorization Rules account
 impl InstructionBuilder for super::builders::Transfer {
-    fn instruction(&self) -> solana_program::instruction::Instruction {
+    fn instruction(&self) -> domichain_program::instruction::Instruction {
         let mut accounts = vec![
             AccountMeta::new(self.token, false),
             AccountMeta::new_readonly(self.token_owner, false),
@@ -810,7 +810,7 @@ impl InstructionBuilder for super::builders::Transfer {
 ///   9. `[optional]` Token Authorization Rules Program
 ///   10. `[optional]` Token Authorization Rules account
 impl InstructionBuilder for super::builders::Update {
-    fn instruction(&self) -> solana_program::instruction::Instruction {
+    fn instruction(&self) -> domichain_program::instruction::Instruction {
         let mut accounts = vec![
             AccountMeta::new_readonly(self.authority, true),
             AccountMeta::new_readonly(self.delegate_record.unwrap_or(crate::ID), false),
@@ -866,7 +866,7 @@ impl InstructionBuilder for super::builders::Update {
 ///   16. `[]` System Program
 
 impl InstructionBuilder for super::builders::Print {
-    fn instruction(&self) -> solana_program::instruction::Instruction {
+    fn instruction(&self) -> domichain_program::instruction::Instruction {
         let accounts = vec![
             AccountMeta::new(self.edition_metadata, false),
             AccountMeta::new(self.edition, false),

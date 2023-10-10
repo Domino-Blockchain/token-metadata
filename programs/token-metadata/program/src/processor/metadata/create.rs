@@ -1,5 +1,5 @@
 use mpl_utils::assert_initialized;
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, msg, program::invoke, program_pack::Pack,
     pubkey::Pubkey, rent::Rent, system_instruction, sysvar::Sysvar,
 };

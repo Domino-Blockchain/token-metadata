@@ -1,7 +1,7 @@
 use std::fmt::Display;
 
 use mpl_utils::{assert_signer, cmp_pubkeys, token::TokenTransferParams};
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo,
     entrypoint::ProgramResult,
     program::invoke,

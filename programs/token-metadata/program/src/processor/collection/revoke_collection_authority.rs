@@ -1,5 +1,5 @@
 use mpl_utils::assert_signer;
-use solana_program::{account_info::AccountInfo, entrypoint::ProgramResult, pubkey::Pubkey};
+use domichain_program::{account_info::AccountInfo, entrypoint::ProgramResult, pubkey::Pubkey};
 
 use crate::{
     assertions::{assert_owned_by, collection::assert_is_collection_delegated_authority},

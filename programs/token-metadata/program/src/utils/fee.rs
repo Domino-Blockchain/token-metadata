@@ -1,4 +1,4 @@
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, program::invoke, rent::Rent,
     sysvar::Sysvar,
 };
@@ -19,7 +19,7 @@ pub(crate) fn levy(args: LevyArgs) -> ProgramResult {
     let fee = CREATE_FEE + rent.minimum_balance(Metadata::size());
 
     invoke(
-        &solana_program::system_instruction::transfer(
+        &domichain_program::system_instruction::transfer(
             args.payer_account_info.key,
             args.token_metadata_pda_info.key,
             fee,

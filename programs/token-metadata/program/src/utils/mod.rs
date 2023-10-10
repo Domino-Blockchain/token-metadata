@@ -18,7 +18,7 @@ pub use mpl_utils::{
     },
 };
 pub use programmable_asset::*;
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, program::invoke_signed,
     program_error::ProgramError, pubkey::Pubkey, rent::Rent, sysvar::Sysvar,
 };
@@ -220,7 +220,7 @@ pub(crate) fn close_program_account<'a>(
     // and assign ownerhsip to the system program.
     if remaining_lamports == 0 {
         account_info.realloc(0, false)?;
-        account_info.assign(&solana_program::system_program::ID);
+        account_info.assign(&domichain_program::system_program::ID);
     } else {
         // Otherwise, we realloc to a data length of one and set the byte to 0 so the
         // discriminator for the account is `Uninitialized`
@@ -233,7 +233,7 @@ pub(crate) fn close_program_account<'a>(
 
 #[cfg(test)]
 mod tests {
-    pub use solana_program::pubkey::Pubkey;
+    pub use domichain_program::pubkey::Pubkey;
 
     use crate::{
         state::MAX_METADATA_LEN,

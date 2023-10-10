@@ -1,5 +1,5 @@
 use mpl_utils::{assert_signer, cmp_pubkeys};
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo,
     entrypoint::ProgramResult,
     msg,

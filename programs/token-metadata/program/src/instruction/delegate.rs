@@ -3,7 +3,7 @@ use std::fmt;
 use borsh::{BorshDeserialize, BorshSerialize};
 #[cfg(feature = "serde-feature")]
 use serde::{Deserialize, Serialize};
-use solana_program::{
+use domichain_program::{
     instruction::{AccountMeta, Instruction},
     pubkey::Pubkey,
 };
@@ -150,7 +150,7 @@ impl fmt::Display for MetadataDelegateRole {
 ///   12. `[optional]` Token Authorization Rules program
 ///   13. `[optional]` Token Authorization Rules account
 impl InstructionBuilder for super::builders::Delegate {
-    fn instruction(&self) -> solana_program::instruction::Instruction {
+    fn instruction(&self) -> domichain_program::instruction::Instruction {
         let accounts = vec![
             if let Some(delegate_record) = self.delegate_record {
                 AccountMeta::new(delegate_record, false)
@@ -209,7 +209,7 @@ impl InstructionBuilder for super::builders::Delegate {
 ///   12. `[optional]` Token Authorization Rules program
 ///   13. `[optional]` Token Authorization Rules account
 impl InstructionBuilder for super::builders::Revoke {
-    fn instruction(&self) -> solana_program::instruction::Instruction {
+    fn instruction(&self) -> domichain_program::instruction::Instruction {
         let accounts = vec![
             if let Some(delegate_record) = self.delegate_record {
                 AccountMeta::new(delegate_record, false)

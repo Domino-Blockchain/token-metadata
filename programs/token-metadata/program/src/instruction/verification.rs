@@ -1,7 +1,7 @@
 use borsh::{BorshDeserialize, BorshSerialize};
 #[cfg(feature = "serde-feature")]
 use serde::{Deserialize, Serialize};
-use solana_program::instruction::{AccountMeta, Instruction};
+use domichain_program::instruction::{AccountMeta, Instruction};
 
 use super::InstructionBuilder;
 use crate::instruction::MetadataInstruction;
@@ -27,7 +27,7 @@ pub enum VerificationArgs {
 ///   6. `[]` System program
 ///   7. `[]` Instructions sysvar account
 impl InstructionBuilder for super::builders::Verify {
-    fn instruction(&self) -> solana_program::instruction::Instruction {
+    fn instruction(&self) -> domichain_program::instruction::Instruction {
         let accounts = vec![
             AccountMeta::new_readonly(self.authority, true),
             AccountMeta::new_readonly(self.delegate_record.unwrap_or(crate::ID), false),
@@ -65,7 +65,7 @@ impl InstructionBuilder for super::builders::Verify {
 ///   5. `[]` System program
 ///   6. `[]` Instructions sysvar account
 impl InstructionBuilder for super::builders::Unverify {
-    fn instruction(&self) -> solana_program::instruction::Instruction {
+    fn instruction(&self) -> domichain_program::instruction::Instruction {
         let accounts = vec![
             AccountMeta::new_readonly(self.authority, true),
             AccountMeta::new_readonly(self.delegate_record.unwrap_or(crate::ID), false),

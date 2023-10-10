@@ -2,7 +2,7 @@ use std::fmt::Display;
 
 use mpl_token_auth_rules::utils::get_latest_revision;
 use mpl_utils::{assert_signer, create_or_allocate_account_raw};
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, program::invoke, program_option::COption,
     program_pack::Pack, pubkey::Pubkey, system_program, sysvar,
 };

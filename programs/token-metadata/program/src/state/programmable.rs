@@ -5,7 +5,7 @@ use mpl_utils::cmp_pubkeys;
 #[cfg(feature = "serde-feature")]
 use serde::{Deserialize, Serialize};
 use shank::ShankAccount;
-use solana_program::{
+use domichain_program::{
     account_info::AccountInfo, instruction::AccountMeta, program_error::ProgramError,
     program_option::COption, pubkey::Pubkey,
 };

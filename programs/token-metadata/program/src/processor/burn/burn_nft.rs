@@ -1,7 +1,7 @@
 use super::*;
 
 use mpl_utils::assert_signer;
-use solana_program::{
+use domichain_program::{
     account_info::{next_account_info, AccountInfo},
     entrypoint::ProgramResult,
     program_error::ProgramError,

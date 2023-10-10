@@ -1,6 +1,6 @@
 use mpl_utils::assert_signer;
 use num_traits::FromPrimitive;
-use solana_program::{account_info::next_account_info, rent::Rent, system_program, sysvar::Sysvar};
+use domichain_program::{account_info::next_account_info, rent::Rent, system_program, sysvar::Sysvar};
 
 use crate::{
     state::{fee::FEE_AUTHORITY, MAX_METADATA_LEN},
