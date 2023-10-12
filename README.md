@@ -24,7 +24,7 @@ git clone https://Domino-Blockchain/domichain.git
 git clone https://Domino-Blockchain/domichain-program-library.git
 cd domichain-program-library
 git switch v1.16.1
-cd ../mpl-token-metadata
+cd ../token-metadata
 
 cargo install cargo-wasi
 cd programs/token-metadata/program
@@ -34,7 +34,7 @@ cd ../domichain
 cargo build --release
 RUST_LOG=OFF target/release/domichain-test-validator \
   --wasm-program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s \
-  ../mpl-token-metadata/programs/token-metadata/target/wasm32-wasi/release/token_metadata.wasm \
+  ../token-metadata/programs/token-metadata/target/wasm32-wasi/release/token_metadata.wasm \
   --reset \
   --log
 ```
