@@ -57,7 +57,7 @@ pub fn assert_rent_exempt(
     account_info: &AccountInfo,
     error: impl Into<ProgramError>,
 ) -> ProgramResult {
-    if !rent.is_exempt(account_info.lamports(), account_info.data_len()) {
+    if !rent.is_exempt(account_info.satomis(), account_info.data_len()) {
         Err(error.into())
     } else {
         Ok(())

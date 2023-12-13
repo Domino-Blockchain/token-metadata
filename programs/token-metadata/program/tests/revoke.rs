@@ -477,7 +477,7 @@ mod revoke {
         borsh::to_writer(&mut data[..TOKEN_RECORD_SIZE], &token_record).unwrap();
 
         let record_account = SdkAccount {
-            lamports: pda.lamports,
+            satomis: pda.satomis,
             data,
             owner: token_metadata::ID,
             executable: false,

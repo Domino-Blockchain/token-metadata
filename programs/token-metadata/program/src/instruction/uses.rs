@@ -133,7 +133,7 @@ pub fn revoke_use_authority(
 
 ///# Utilize
 ///
-///Utilize or Use an NFT , burns the NFT and returns the lamports to the update authority if the use method is burn and its out of uses.
+///Utilize or Use an NFT , burns the NFT and returns the satomis to the update authority if the use method is burn and its out of uses.
 ///Use Authority can be the Holder of the NFT, or a Delegated Use Authority.
 ///
 ///### Accounts:

@@ -62,7 +62,7 @@ mod bump_seed_migration {
             bump: 0,
         };
         let mut account = Account {
-            lamports: 1113600,
+            satomis: 1113600,
             data: vec![],
             owner: token_metadata::ID,
             executable: false,

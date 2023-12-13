@@ -197,14 +197,14 @@ mod tests {
 
         let pubkey = Keypair::new().pubkey();
         let owner = &ID;
-        let mut lamports = 1_000_000_000;
+        let mut satomis = 1_000_000_000;
         let mut data = buf.clone();
 
         let account_info = AccountInfo::new(
             &pubkey,
             false,
             true,
-            &mut lamports,
+            &mut satomis,
             &mut data,
             owner,
             false,
@@ -226,14 +226,14 @@ mod tests {
 
         let pubkey = Keypair::new().pubkey();
         let owner = &ID;
-        let mut lamports = 1_000_000_000;
+        let mut satomis = 1_000_000_000;
         let mut data = buf.clone();
 
         let account_info = AccountInfo::new(
             &pubkey,
             false,
             true,
-            &mut lamports,
+            &mut satomis,
             &mut data,
             owner,
             false,

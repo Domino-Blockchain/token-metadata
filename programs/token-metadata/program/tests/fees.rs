@@ -127,7 +127,7 @@ mod fees {
 
         let recipient_balance = get_account(&mut context, &recipient.pubkey())
             .await
-            .lamports;
+            .satomis;
 
         assert_eq!(recipient_balance, expected_balance);
 
@@ -190,7 +190,7 @@ mod fees {
 
         let recipient_balance = get_account(&mut context, &recipient.pubkey())
             .await
-            .lamports;
+            .satomis;
 
         assert_eq!(recipient_balance, expected_balance);
     }

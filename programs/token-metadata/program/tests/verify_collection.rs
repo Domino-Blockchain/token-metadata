@@ -1309,7 +1309,7 @@ async fn success_collection_authority_delegate_revoke() {
     data[1] = bump; // bump
 
     let record_account = Account {
-        lamports: LAMPORTS_PER_SOL,
+        satomis: LAMPORTS_PER_SOL,
         data,
         owner: token_metadata::ID,
         executable: false,

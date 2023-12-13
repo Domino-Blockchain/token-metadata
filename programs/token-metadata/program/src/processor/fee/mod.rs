@@ -51,11 +51,11 @@ fn collect_fee_from_account(account_info: &AccountInfo, dest_info: &AccountInfo)
         Key::Uninitialized => {
             account_info.assign(&system_program::ID);
 
-            (account_info.lamports(), 0)
+            (account_info.satomis(), 0)
         }
         Key::MetadataV1 => {
             let fee_amount = account_info
-                .lamports()
+                .satomis()
                 .checked_sub(metadata_rent)
                 .ok_or(MetadataError::NumericalOverflowError)?;
 
@@ -64,11 +64,11 @@ fn collect_fee_from_account(account_info: &AccountInfo, dest_info: &AccountInfo)
         _ => return Err(MetadataError::InvalidFeeAccount.into()),
     };
 
-    let dest_starting_lamports = dest_info.lamports();
-    **dest_info.lamports.borrow_mut() = dest_starting_lamports
+    let dest_starting_lamports = dest_info.satomis();
+    **dest_info.satomis.borrow_mut() = dest_starting_lamports
         .checked_add(fee_amount)
         .ok_or(MetadataError::NumericalOverflowError)?;
-    **account_info.lamports.borrow_mut() = rent_amount;
+    **account_info.satomis.borrow_mut() = rent_amount;
 
     // Clear fee flag.
     clear_fee_flag(account_info)?;

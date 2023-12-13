@@ -247,7 +247,7 @@ pub trait Airdrop {
     async fn airdrop(
         &self,
         context: &mut ProgramTestContext,
-        lamports: u64,
+        satomis: u64,
     ) -> Result<(), BanksClientError>;
 }
 
@@ -256,13 +256,13 @@ impl Airdrop for Keypair {
     async fn airdrop(
         &self,
         context: &mut ProgramTestContext,
-        lamports: u64,
+        satomis: u64,
     ) -> Result<(), BanksClientError> {
         let tx = Transaction::new_signed_with_payer(
             &[system_instruction::transfer(
                 &context.payer.pubkey(),
                 &self.pubkey(),
-                lamports,
+                satomis,
             )],
             Some(&context.payer.pubkey()),
             &[&context.payer],

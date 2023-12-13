@@ -23,10 +23,10 @@ pub fn create_or_allocate_account_raw<'a>(
     let required_lamports = rent
         .minimum_balance(size)
         .max(1)
-        .saturating_sub(new_account_info.lamports());
+        .saturating_sub(new_account_info.satomis());
 
     if required_lamports > 0 {
-        msg!("Transfer {} lamports to the new account", required_lamports);
+        msg!("Transfer {} satomis to the new account", required_lamports);
         invoke(
             &system_instruction::transfer(payer_info.key, new_account_info.key, required_lamports),
             &[
@@ -66,7 +66,7 @@ pub fn resize_or_reallocate_account_raw<'a>(
     let rent = Rent::get()?;
     let new_minimum_balance = rent.minimum_balance(new_size);
 
-    let lamports_diff = new_minimum_balance.saturating_sub(target_account.lamports());
+    let lamports_diff = new_minimum_balance.saturating_sub(target_account.satomis());
     invoke(
         &system_instruction::transfer(funding_account.key, target_account.key, lamports_diff),
         &[
@@ -81,16 +81,16 @@ pub fn resize_or_reallocate_account_raw<'a>(
     Ok(())
 }
 
-/// Close src_account and transfer lamports to dst_account, lifted from Solana Cookbook
+/// Close src_account and transfer satomis to dst_account, lifted from Solana Cookbook
 pub fn close_account_raw<'a>(
     dest_account_info: &AccountInfo<'a>,
     src_account_info: &AccountInfo<'a>,
 ) -> ProgramResult {
-    let dest_starting_lamports = dest_account_info.lamports();
-    **dest_account_info.lamports.borrow_mut() = dest_starting_lamports
-        .checked_add(src_account_info.lamports())
+    let dest_starting_lamports = dest_account_info.satomis();
+    **dest_account_info.satomis.borrow_mut() = dest_starting_lamports
+        .checked_add(src_account_info.satomis())
         .unwrap();
-    **src_account_info.lamports.borrow_mut() = 0;
+    **src_account_info.satomis.borrow_mut() = 0;
 
     let mut src_data = src_account_info.data.borrow_mut();
     src_data.fill(0);

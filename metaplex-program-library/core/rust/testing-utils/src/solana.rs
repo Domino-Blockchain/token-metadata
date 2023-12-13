@@ -6,7 +6,7 @@ use solana_sdk::system_instruction;
 use solana_sdk::transaction::Transaction;
 use solana_sdk::{account::Account, program_pack::Pack};
 use spl_token::state::Mint;
-/// Perform native lamports transfer.
+/// Perform native satomis transfer.
 pub async fn transfer_lamports(
     client: &mut ProgramTestContext,
     wallet: &Keypair,

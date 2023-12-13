@@ -201,7 +201,7 @@ pub enum MetadataInstruction {
     #[legacy_optional_accounts_strategy]
     MintNewEditionFromMasterEditionViaToken(MintNewEditionFromMasterEditionViaTokenArgs),
 
-    /// Converts the Master Edition V1 to a Master Edition V2, draining lamports from the two printing mints
+    /// Converts the Master Edition V1 to a Master Edition V2, draining satomis from the two printing mints
     /// to the owner of the token account holding the master edition token. Permissionless.
     /// Can only be called if there are currenly no printing tokens or one time authorization tokens in circulation.
     #[account(0, writable, name="master_edition", desc="Master Record Edition V1 (pda of ['metadata', program id, master metadata mint id, 'edition'])")]
@@ -277,7 +277,7 @@ pub enum MetadataInstruction {
     #[legacy_optional_accounts_strategy]
     VerifyCollection,
 
-    /// Utilize or Use an NFT , burns the NFT and returns the lamports to the update authority if the use method is burn and its out of uses.
+    /// Utilize or Use an NFT , burns the NFT and returns the satomis to the update authority if the use method is burn and its out of uses.
     /// Use Authority can be the Holder of the NFT, or a Delegated Use Authority.
     #[account(0, writable, name="metadata", desc="Metadata account")]
     #[account(1, writable, name="token_account", desc="Token Account Of NFT")]

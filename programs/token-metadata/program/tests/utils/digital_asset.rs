@@ -1379,7 +1379,7 @@ impl DigitalAsset {
 
         let expected_lamports = rent_exempt + CREATE_FEE;
 
-        assert_eq!(account.lamports, expected_lamports);
+        assert_eq!(account.satomis, expected_lamports);
         assert_eq!(account.data[METADATA_FEE_FLAG_INDEX], FEE_FLAG_SET);
 
         Ok(())

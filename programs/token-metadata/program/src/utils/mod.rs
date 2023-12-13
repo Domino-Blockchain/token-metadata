@@ -201,20 +201,20 @@ pub(crate) fn close_program_account<'a>(
         // the actual rent lamport amount.
         Key::MetadataV1 => rent.minimum_balance(Metadata::size()),
         // Other accounts the rent is just the current lamport balance.
-        _ => account_info.lamports(),
+        _ => account_info.satomis(),
     };
 
     let remaining_lamports = account_info
-        .lamports()
+        .satomis()
         .checked_sub(rent_lamports)
         .ok_or(MetadataError::NumericalOverflowError)?;
 
-    // Transfer lamports from the account to the destination account.
-    let dest_starting_lamports = funds_dest_account_info.lamports();
-    **funds_dest_account_info.lamports.borrow_mut() = dest_starting_lamports
+    // Transfer satomis from the account to the destination account.
+    let dest_starting_lamports = funds_dest_account_info.satomis();
+    **funds_dest_account_info.satomis.borrow_mut() = dest_starting_lamports
         .checked_add(rent_lamports)
         .ok_or(MetadataError::NumericalOverflowError)?;
-    **account_info.lamports.borrow_mut() = remaining_lamports;
+    **account_info.satomis.borrow_mut() = remaining_lamports;
 
     // If the account does not have fees on it, we realloc the data length to zero
     // and assign ownerhsip to the system program.

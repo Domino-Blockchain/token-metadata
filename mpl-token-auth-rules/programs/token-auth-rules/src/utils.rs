@@ -35,15 +35,15 @@ pub fn create_or_allocate_account_raw<'a>(
     signer_seeds: &[&[u8]],
 ) -> ProgramResult {
     let rent = &Rent::get()?;
-    let required_lamports = rent
+    let required_satomis = rent
         .minimum_balance(size)
         .max(1)
-        .saturating_sub(new_account_info.lamports());
+        .saturating_sub(new_account_info.satomis());
 
-    if required_lamports > 0 {
-        msg!("Transfer {} lamports to the new account", required_lamports);
+    if required_satomis > 0 {
+        msg!("Transfer {} satomis to the new account", required_satomis);
         invoke(
-            &system_instruction::transfer(payer_info.key, new_account_info.key, required_lamports),
+            &system_instruction::transfer(payer_info.key, new_account_info.key, required_satomis),
             &[
                 payer_info.clone(),
                 new_account_info.clone(),
@@ -82,9 +82,9 @@ pub fn resize_or_reallocate_account_raw<'a>(
     let rent = Rent::get()?;
     let new_minimum_balance = rent.minimum_balance(new_size);
 
-    let lamports_diff = new_minimum_balance.saturating_sub(target_account.lamports());
+    let satomis_diff = new_minimum_balance.saturating_sub(target_account.satomis());
     invoke(
-        &system_instruction::transfer(funding_account.key, target_account.key, lamports_diff),
+        &system_instruction::transfer(funding_account.key, target_account.key, satomis_diff),
         &[
             funding_account.clone(),
             target_account.clone(),
