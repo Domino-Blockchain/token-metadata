@@ -29,6 +29,7 @@ cd ../token-metadata
 cargo install cargo-wasi
 cd programs/token-metadata/program
 cargo wasi build --release
+cd -
 
 cd ../domichain
 cargo build --release
@@ -37,6 +38,11 @@ RUST_LOG=OFF target/release/domichain-test-validator \
   ../token-metadata/programs/token-metadata/target/wasm32-wasi/release/token_metadata.wasm \
   --reset \
   --log
+
+target/release/domichain airdrop 1000 '4EmLFkzs6evHdvMC8EuNLfbZgr1zww6VVjkVRL4nqUZ6'
+cd ../token-metadata/examples/js/test-create-mint-and-metadata
+npm i
+npm run test
 ```
 
 The packages below can be use to interact with Token Metadata program.
