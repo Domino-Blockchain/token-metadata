@@ -4,7 +4,8 @@ use domichain_program::{
 };
 
 pub fn cmp_pubkeys(a: &Pubkey, b: &Pubkey) -> bool {
-    sol_memcmp(a.as_ref(), b.as_ref(), PUBKEY_BYTES) == 0
+    a.to_bytes() == b.to_bytes()
+    // sol_memcmp(a.as_ref(), b.as_ref(), PUBKEY_BYTES) == 0
 }
 
 #[cfg(test)]
