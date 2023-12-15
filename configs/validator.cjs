@@ -12,7 +12,7 @@ module.exports = {
     programs: [
       {
         label: "Token Metadata",
-        programId: "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+        programId: "meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C",
         deployPath: getProgram("token_metadata.so"),
       },
       {

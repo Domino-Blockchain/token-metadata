@@ -58,7 +58,7 @@ export const burnNftInstructionDiscriminator = 29;
  */
 export function createBurnNftInstruction(
   accounts: BurnNftInstructionAccounts,
-  programId = new web3.PublicKey('metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'),
+  programId = new web3.PublicKey('meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'),
 ) {
   const [data] = BurnNftStruct.serialize({
     instructionDiscriminator: burnNftInstructionDiscriminator,

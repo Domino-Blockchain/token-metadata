@@ -12,7 +12,7 @@ function localDeployPath(programName) {
 const programs = {
   metadata: {
     label: 'Metadata',
-    programId: 'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s',
+    programId: 'meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C',
     deployPath: localDeployPath('mpl_token_metadata'),
   },
   token_sale: {

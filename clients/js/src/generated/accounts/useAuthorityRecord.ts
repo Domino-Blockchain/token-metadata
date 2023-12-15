@@ -139,7 +139,7 @@ export function getUseAuthorityRecordGpaBuilder(
 ) {
   const programId = context.programs.getPublicKey(
     'mplTokenMetadata',
-    'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'
+    'meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'
   );
   return gpaBuilder(context, programId)
     .registerFields<{
@@ -172,7 +172,7 @@ export function findUseAuthorityRecordPda(
 ): Pda {
   const programId = context.programs.getPublicKey(
     'mplTokenMetadata',
-    'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'
+    'meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'
   );
   return context.eddsa.findPda(programId, [
     string({ size: 'variable' }).serialize('metadata'),

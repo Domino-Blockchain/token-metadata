@@ -92,7 +92,7 @@ export function migrate(
   // Program ID.
   const programId = context.programs.getPublicKey(
     'mplTokenMetadata',
-    'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'
+    'meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'
   );
 
   // Accounts.

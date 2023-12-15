@@ -65,7 +65,7 @@ export const updateMetadataAccountV2InstructionDiscriminator = 15;
 export function createUpdateMetadataAccountV2Instruction(
   accounts: UpdateMetadataAccountV2InstructionAccounts,
   args: UpdateMetadataAccountV2InstructionArgs,
-  programId = new web3.PublicKey('metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'),
+  programId = new web3.PublicKey('meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'),
 ) {
   const [data] = UpdateMetadataAccountV2Struct.serialize({
     instructionDiscriminator: updateMetadataAccountV2InstructionDiscriminator,
