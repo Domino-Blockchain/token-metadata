@@ -9,57 +9,43 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata key (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata key (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of token asset"
-          ]
+          "docs": ["Mint of token asset"]
         },
         {
           "name": "mintAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Mint authority"
-          ]
+          "docs": ["Mint authority"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "update authority info"
-          ]
+          "docs": ["update authority info"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         }
       ],
       "args": [],
@@ -75,17 +61,13 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Update authority key"
-          ]
+          "docs": ["Update authority key"]
         }
       ],
       "args": [],
@@ -109,9 +91,7 @@
           "name": "mint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata mint"
-          ]
+          "docs": ["Metadata mint"]
         },
         {
           "name": "printingMint",
@@ -133,9 +113,7 @@
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Current Update authority key"
-          ]
+          "docs": ["Current Update authority key"]
         },
         {
           "name": "printingMintAuthority",
@@ -157,41 +135,31 @@
           "name": "metadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "payer",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         },
         {
           "name": "oneTimePrintingAuthorizationMintAuthority",
@@ -215,17 +183,13 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "New Metadata key (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["New Metadata key (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "edition",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "New Edition V1 (pda of ['metadata', program id, mint id, 'edition'])"
-          ]
+          "docs": ["New Edition V1 (pda of ['metadata', program id, mint id, 'edition'])"]
         },
         {
           "name": "masterEdition",
@@ -239,33 +203,25 @@
           "name": "mint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Mint of new token - THIS WILL TRANSFER AUTHORITY AWAY FROM THIS KEY"
-          ]
+          "docs": ["Mint of new token - THIS WILL TRANSFER AUTHORITY AWAY FROM THIS KEY"]
         },
         {
           "name": "mintAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Mint authority of new mint"
-          ]
+          "docs": ["Mint authority of new mint"]
         },
         {
           "name": "printingMint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Printing Mint of master record edition"
-          ]
+          "docs": ["Printing Mint of master record edition"]
         },
         {
           "name": "masterTokenAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account containing Printing mint token to be transferred"
-          ]
+          "docs": ["Token account containing Printing mint token to be transferred"]
         },
         {
           "name": "editionMarker",
@@ -279,57 +235,43 @@
           "name": "burnAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Burn authority for this token"
-          ]
+          "docs": ["Burn authority for this token"]
         },
         {
           "name": "payer",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "masterUpdateAuthority",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "update authority info for new metadata account"
-          ]
+          "docs": ["update authority info for new metadata account"]
         },
         {
           "name": "masterMetadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Master record metadata account"
-          ]
+          "docs": ["Master record metadata account"]
         },
         {
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         },
         {
           "name": "reservationList",
@@ -355,25 +297,19 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata key (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata key (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "owner",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Owner on the token account"
-          ]
+          "docs": ["Owner on the token account"]
         },
         {
           "name": "token",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Account containing tokens from the metadata's mint"
-          ]
+          "docs": ["Account containing tokens from the metadata's mint"]
         }
       ],
       "args": [],
@@ -405,9 +341,7 @@
           "name": "resource",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "The resource you tied the reservation list too"
-          ]
+          "docs": ["The resource you tied the reservation list too"]
         }
       ],
       "args": [],
@@ -431,17 +365,13 @@
           "name": "payer",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Update authority"
-          ]
+          "docs": ["Update authority"]
         },
         {
           "name": "masterEdition",
@@ -463,25 +393,19 @@
           "name": "metadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Metadata key (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata key (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         }
       ],
       "args": [],
@@ -497,17 +421,13 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "creator",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Creator"
-          ]
+          "docs": ["Creator"]
         }
       ],
       "args": [],
@@ -523,49 +443,37 @@
           "name": "destination",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Destination account"
-          ]
+          "docs": ["Destination account"]
         },
         {
           "name": "token",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account containing one time authorization token"
-          ]
+          "docs": ["Token account containing one time authorization token"]
         },
         {
           "name": "oneTimePrintingAuthorizationMint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "One time authorization mint"
-          ]
+          "docs": ["One time authorization mint"]
         },
         {
           "name": "printingMint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Printing mint"
-          ]
+          "docs": ["Printing mint"]
         },
         {
           "name": "burnAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Burn authority"
-          ]
+          "docs": ["Burn authority"]
         },
         {
           "name": "metadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Metadata key (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata key (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "masterEdition",
@@ -579,17 +487,13 @@
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Rent"
-          ]
+          "docs": ["Rent"]
         }
       ],
       "args": [],
@@ -605,33 +509,25 @@
           "name": "destination",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Destination account"
-          ]
+          "docs": ["Destination account"]
         },
         {
           "name": "printingMint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Printing mint"
-          ]
+          "docs": ["Printing mint"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Update authority"
-          ]
+          "docs": ["Update authority"]
         },
         {
           "name": "metadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Metadata key (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata key (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "masterEdition",
@@ -645,17 +541,13 @@
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Rent"
-          ]
+          "docs": ["Rent"]
         }
       ],
       "args": [],
@@ -679,17 +571,13 @@
           "name": "mint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata mint"
-          ]
+          "docs": ["Metadata mint"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Update authority"
-          ]
+          "docs": ["Update authority"]
         },
         {
           "name": "mintAuthority",
@@ -703,41 +591,31 @@
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "metadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         }
       ],
       "args": [],
@@ -753,17 +631,13 @@
           "name": "newMetadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "New Metadata key (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["New Metadata key (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "newEdition",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "New Edition (pda of ['metadata', program id, mint id, 'edition'])"
-          ]
+          "docs": ["New Edition (pda of ['metadata', program id, mint id, 'edition'])"]
         },
         {
           "name": "masterEdition",
@@ -777,9 +651,7 @@
           "name": "newMint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Mint of new token - THIS WILL TRANSFER AUTHORITY AWAY FROM THIS KEY"
-          ]
+          "docs": ["Mint of new token - THIS WILL TRANSFER AUTHORITY AWAY FROM THIS KEY"]
         },
         {
           "name": "editionMarkPda",
@@ -793,74 +665,56 @@
           "name": "newMintAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Mint authority of new mint"
-          ]
+          "docs": ["Mint authority of new mint"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "tokenAccountOwner",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "owner of token account containing master token (#8)"
-          ]
+          "docs": ["owner of token account containing master token (#8)"]
         },
         {
           "name": "tokenAccount",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "token account containing token from master metadata mint"
-          ]
+          "docs": ["token account containing token from master metadata mint"]
         },
         {
           "name": "newMetadataUpdateAuthority",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Update authority info for new metadata"
-          ]
+          "docs": ["Update authority info for new metadata"]
         },
         {
           "name": "metadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Master record metadata account"
-          ]
+          "docs": ["Master record metadata account"]
         },
         {
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         }
       ],
       "args": [
@@ -892,17 +746,13 @@
           "name": "oneTimeAuth",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "One time authorization mint"
-          ]
+          "docs": ["One time authorization mint"]
         },
         {
           "name": "printingMint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Printing mint"
-          ]
+          "docs": ["Printing mint"]
         }
       ],
       "args": [],
@@ -918,17 +768,13 @@
           "name": "newMetadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "New Metadata key (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["New Metadata key (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "newEdition",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "New Edition (pda of ['metadata', program id, mint id, 'edition'])"
-          ]
+          "docs": ["New Edition (pda of ['metadata', program id, mint id, 'edition'])"]
         },
         {
           "name": "masterEdition",
@@ -942,9 +788,7 @@
           "name": "newMint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Mint of new token - THIS WILL TRANSFER AUTHORITY AWAY FROM THIS KEY"
-          ]
+          "docs": ["Mint of new token - THIS WILL TRANSFER AUTHORITY AWAY FROM THIS KEY"]
         },
         {
           "name": "editionMarkPda",
@@ -958,98 +802,74 @@
           "name": "newMintAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Mint authority of new mint"
-          ]
+          "docs": ["Mint authority of new mint"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "vaultAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Vault authority"
-          ]
+          "docs": ["Vault authority"]
         },
         {
           "name": "safetyDepositStore",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Safety deposit token store account"
-          ]
+          "docs": ["Safety deposit token store account"]
         },
         {
           "name": "safetyDepositBox",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Safety deposit box"
-          ]
+          "docs": ["Safety deposit box"]
         },
         {
           "name": "vault",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Vault"
-          ]
+          "docs": ["Vault"]
         },
         {
           "name": "newMetadataUpdateAuthority",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Update authority info for new metadata"
-          ]
+          "docs": ["Update authority info for new metadata"]
         },
         {
           "name": "metadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Master record metadata account"
-          ]
+          "docs": ["Master record metadata account"]
         },
         {
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "tokenVaultProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token vault program"
-          ]
+          "docs": ["Token vault program"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         }
       ],
       "args": [
@@ -1073,9 +893,7 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         }
       ],
       "args": [],
@@ -1091,17 +909,13 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Update authority key"
-          ]
+          "docs": ["Update authority key"]
         }
       ],
       "args": [
@@ -1124,58 +938,44 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata key (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata key (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of token asset"
-          ]
+          "docs": ["Mint of token asset"]
         },
         {
           "name": "mintAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Mint authority"
-          ]
+          "docs": ["Mint authority"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "update authority info"
-          ]
+          "docs": ["update authority info"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         }
       ],
       "args": [],
@@ -1200,17 +1000,13 @@
           "name": "mint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata mint"
-          ]
+          "docs": ["Metadata mint"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Update authority"
-          ]
+          "docs": ["Update authority"]
         },
         {
           "name": "mintAuthority",
@@ -1224,42 +1020,32 @@
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         }
       ],
       "args": [
@@ -1283,58 +1069,44 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "collectionAuthority",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Collection Update authority"
-          ]
+          "docs": ["Collection Update authority"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "collectionMint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of the Collection"
-          ]
+          "docs": ["Mint of the Collection"]
         },
         {
           "name": "collection",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Metadata Account of the Collection"
-          ]
+          "docs": ["Metadata Account of the Collection"]
         },
         {
           "name": "collectionMasterEditionAccount",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "MasterEdition2 Account of the Collection Token"
-          ]
+          "docs": ["MasterEdition2 Account of the Collection Token"]
         },
         {
           "name": "collectionAuthorityRecord",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Collection Authority Record PDA"
-          ]
+          "docs": ["Collection Authority Record PDA"]
         }
       ],
       "args": [],
@@ -1351,73 +1123,55 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "tokenAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token Account Of NFT"
-          ]
+          "docs": ["Token Account Of NFT"]
         },
         {
           "name": "mint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Mint of the Metadata"
-          ]
+          "docs": ["Mint of the Metadata"]
         },
         {
           "name": "useAuthority",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "A Use Authority / Can be the current Owner of the NFT"
-          ]
+          "docs": ["A Use Authority / Can be the current Owner of the NFT"]
         },
         {
           "name": "owner",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Owner"
-          ]
+          "docs": ["Owner"]
         },
         {
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "ataProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Associated Token program"
-          ]
+          "docs": ["Associated Token program"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         },
         {
           "name": "useAuthorityRecord",
@@ -1433,9 +1187,7 @@
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Program As Signer (Burner)"
-          ]
+          "docs": ["Program As Signer (Burner)"]
         }
       ],
       "args": [
@@ -1459,90 +1211,68 @@
           "name": "useAuthorityRecord",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Use Authority Record PDA"
-          ]
+          "docs": ["Use Authority Record PDA"]
         },
         {
           "name": "owner",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Owner"
-          ]
+          "docs": ["Owner"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "user",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "A Use Authority"
-          ]
+          "docs": ["A Use Authority"]
         },
         {
           "name": "ownerTokenAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Owned Token Account Of Mint"
-          ]
+          "docs": ["Owned Token Account Of Mint"]
         },
         {
           "name": "metadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of Metadata"
-          ]
+          "docs": ["Mint of Metadata"]
         },
         {
           "name": "burner",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Program As Signer (Burner)"
-          ]
+          "docs": ["Program As Signer (Burner)"]
         },
         {
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         }
       ],
       "args": [
@@ -1566,74 +1296,56 @@
           "name": "useAuthorityRecord",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Use Authority Record PDA"
-          ]
+          "docs": ["Use Authority Record PDA"]
         },
         {
           "name": "owner",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Owner"
-          ]
+          "docs": ["Owner"]
         },
         {
           "name": "user",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "A Use Authority"
-          ]
+          "docs": ["A Use Authority"]
         },
         {
           "name": "ownerTokenAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Owned Token Account Of Mint"
-          ]
+          "docs": ["Owned Token Account Of Mint"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of Metadata"
-          ]
+          "docs": ["Mint of Metadata"]
         },
         {
           "name": "metadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         }
       ],
       "args": [],
@@ -1650,50 +1362,38 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "collectionAuthority",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Collection Authority"
-          ]
+          "docs": ["Collection Authority"]
         },
         {
           "name": "collectionMint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of the Collection"
-          ]
+          "docs": ["Mint of the Collection"]
         },
         {
           "name": "collection",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Metadata Account of the Collection"
-          ]
+          "docs": ["Metadata Account of the Collection"]
         },
         {
           "name": "collectionMasterEditionAccount",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "MasterEdition2 Account of the Collection Token"
-          ]
+          "docs": ["MasterEdition2 Account of the Collection Token"]
         },
         {
           "name": "collectionAuthorityRecord",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Collection Authority Record PDA"
-          ]
+          "docs": ["Collection Authority Record PDA"]
         }
       ],
       "args": [],
@@ -1710,66 +1410,50 @@
           "name": "collectionAuthorityRecord",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Collection Authority Record PDA"
-          ]
+          "docs": ["Collection Authority Record PDA"]
         },
         {
           "name": "newCollectionAuthority",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "A Collection Authority"
-          ]
+          "docs": ["A Collection Authority"]
         },
         {
           "name": "updateAuthority",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Update Authority of Collection NFT"
-          ]
+          "docs": ["Update Authority of Collection NFT"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "metadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Collection Metadata account"
-          ]
+          "docs": ["Collection Metadata account"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of Collection Metadata"
-          ]
+          "docs": ["Mint of Collection Metadata"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         }
       ],
       "args": [],
@@ -1786,41 +1470,31 @@
           "name": "collectionAuthorityRecord",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Collection Authority Record PDA"
-          ]
+          "docs": ["Collection Authority Record PDA"]
         },
         {
           "name": "delegateAuthority",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Delegated Collection Authority"
-          ]
+          "docs": ["Delegated Collection Authority"]
         },
         {
           "name": "revokeAuthority",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Update Authority, or Delegated Authority, of Collection NFT"
-          ]
+          "docs": ["Update Authority, or Delegated Authority, of Collection NFT"]
         },
         {
           "name": "metadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of Metadata"
-          ]
+          "docs": ["Mint of Metadata"]
         }
       ],
       "args": [],
@@ -1836,66 +1510,50 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "collectionAuthority",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Collection Update authority"
-          ]
+          "docs": ["Collection Update authority"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Update Authority of Collection NFT and NFT"
-          ]
+          "docs": ["Update Authority of Collection NFT and NFT"]
         },
         {
           "name": "collectionMint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of the Collection"
-          ]
+          "docs": ["Mint of the Collection"]
         },
         {
           "name": "collection",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Metadata Account of the Collection"
-          ]
+          "docs": ["Metadata Account of the Collection"]
         },
         {
           "name": "collectionMasterEditionAccount",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "MasterEdition2 Account of the Collection Token"
-          ]
+          "docs": ["MasterEdition2 Account of the Collection Token"]
         },
         {
           "name": "collectionAuthorityRecord",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Collection Authority Record PDA"
-          ]
+          "docs": ["Collection Authority Record PDA"]
         }
       ],
       "args": [],
@@ -1912,41 +1570,31 @@
           "name": "delegate",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Delegate"
-          ]
+          "docs": ["Delegate"]
         },
         {
           "name": "tokenAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account to freeze"
-          ]
+          "docs": ["Token account to freeze"]
         },
         {
           "name": "edition",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Edition"
-          ]
+          "docs": ["Edition"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token mint"
-          ]
+          "docs": ["Token mint"]
         },
         {
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token Program"
-          ]
+          "docs": ["Token Program"]
         }
       ],
       "args": [],
@@ -1962,41 +1610,31 @@
           "name": "delegate",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Delegate"
-          ]
+          "docs": ["Delegate"]
         },
         {
           "name": "tokenAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account to thaw"
-          ]
+          "docs": ["Token account to thaw"]
         },
         {
           "name": "edition",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Edition"
-          ]
+          "docs": ["Edition"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token mint"
-          ]
+          "docs": ["Token mint"]
         },
         {
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token Program"
-          ]
+          "docs": ["Token Program"]
         }
       ],
       "args": [],
@@ -2012,17 +1650,13 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "creator",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Creator"
-          ]
+          "docs": ["Creator"]
         }
       ],
       "args": [],
@@ -2038,58 +1672,44 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "owner",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "NFT owner"
-          ]
+          "docs": ["NFT owner"]
         },
         {
           "name": "mint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Mint of the NFT"
-          ]
+          "docs": ["Mint of the NFT"]
         },
         {
           "name": "tokenAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account to close"
-          ]
+          "docs": ["Token account to close"]
         },
         {
           "name": "masterEditionAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "MasterEdition2 of the NFT"
-          ]
+          "docs": ["MasterEdition2 of the NFT"]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "SPL Token Program"
-          ]
+          "docs": ["SPL Token Program"]
         },
         {
           "name": "collectionMetadata",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Metadata of the Collection"
-          ]
+          "docs": ["Metadata of the Collection"]
         }
       ],
       "args": [],
@@ -2106,58 +1726,44 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "collectionAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Collection Update authority"
-          ]
+          "docs": ["Collection Update authority"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "collectionMint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of the Collection"
-          ]
+          "docs": ["Mint of the Collection"]
         },
         {
           "name": "collection",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata Account of the Collection"
-          ]
+          "docs": ["Metadata Account of the Collection"]
         },
         {
           "name": "collectionMasterEditionAccount",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "MasterEdition2 Account of the Collection Token"
-          ]
+          "docs": ["MasterEdition2 Account of the Collection Token"]
         },
         {
           "name": "collectionAuthorityRecord",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Collection Authority Record PDA"
-          ]
+          "docs": ["Collection Authority Record PDA"]
         }
       ],
       "args": [],
@@ -2174,58 +1780,44 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "collectionAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Collection Authority"
-          ]
+          "docs": ["Collection Authority"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "collectionMint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of the Collection"
-          ]
+          "docs": ["Mint of the Collection"]
         },
         {
           "name": "collection",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata Account of the Collection"
-          ]
+          "docs": ["Metadata Account of the Collection"]
         },
         {
           "name": "collectionMasterEditionAccount",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "MasterEdition2 Account of the Collection Token"
-          ]
+          "docs": ["MasterEdition2 Account of the Collection Token"]
         },
         {
           "name": "collectionAuthorityRecord",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Collection Authority Record PDA"
-          ]
+          "docs": ["Collection Authority Record PDA"]
         }
       ],
       "args": [],
@@ -2242,66 +1834,50 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "collectionAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Collection Update authority"
-          ]
+          "docs": ["Collection Update authority"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Update Authority of Collection NFT and NFT"
-          ]
+          "docs": ["Update Authority of Collection NFT and NFT"]
         },
         {
           "name": "collectionMint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of the Collection"
-          ]
+          "docs": ["Mint of the Collection"]
         },
         {
           "name": "collection",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata Account of the Collection"
-          ]
+          "docs": ["Metadata Account of the Collection"]
         },
         {
           "name": "collectionMasterEditionAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "MasterEdition2 Account of the Collection Token"
-          ]
+          "docs": ["MasterEdition2 Account of the Collection Token"]
         },
         {
           "name": "collectionAuthorityRecord",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Collection Authority Record PDA"
-          ]
+          "docs": ["Collection Authority Record PDA"]
         }
       ],
       "args": [],
@@ -2318,58 +1894,44 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata key (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata key (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of token asset"
-          ]
+          "docs": ["Mint of token asset"]
         },
         {
           "name": "mintAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Mint authority"
-          ]
+          "docs": ["Mint authority"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "update authority info"
-          ]
+          "docs": ["update authority info"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "rent",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Rent info"
-          ]
+          "docs": ["Rent info"]
         }
       ],
       "args": [
@@ -2393,34 +1955,26 @@
           "name": "collectionMetadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Collection Metadata account"
-          ]
+          "docs": ["Collection Metadata account"]
         },
         {
           "name": "collectionAuthority",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Collection Update authority"
-          ]
+          "docs": ["Collection Update authority"]
         },
         {
           "name": "collectionMint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of the Collection"
-          ]
+          "docs": ["Mint of the Collection"]
         },
         {
           "name": "collectionAuthorityRecord",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Collection Authority Record PDA"
-          ]
+          "docs": ["Collection Authority Record PDA"]
         }
       ],
       "args": [
@@ -2444,34 +1998,26 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Metadata update authority"
-          ]
+          "docs": ["Metadata update authority"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint account"
-          ]
+          "docs": ["Mint account"]
         },
         {
           "name": "edition",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Edition account"
-          ]
+          "docs": ["Edition account"]
         }
       ],
       "args": [],
@@ -2488,42 +2034,32 @@
           "name": "collectionMetadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Collection Metadata account"
-          ]
+          "docs": ["Collection Metadata account"]
         },
         {
           "name": "collectionAuthority",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Collection Update authority"
-          ]
+          "docs": ["Collection Update authority"]
         },
         {
           "name": "collectionMint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of the Collection"
-          ]
+          "docs": ["Mint of the Collection"]
         },
         {
           "name": "bubblegumSigner",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Signing PDA of Bubblegum program"
-          ]
+          "docs": ["Signing PDA of Bubblegum program"]
         },
         {
           "name": "collectionAuthorityRecord",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Collection Authority Record PDA"
-          ]
+          "docs": ["Collection Authority Record PDA"]
         }
       ],
       "args": [
@@ -2547,81 +2083,61 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "owner",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "NFT owner"
-          ]
+          "docs": ["NFT owner"]
         },
         {
           "name": "printEditionMint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Mint of the print edition NFT"
-          ]
+          "docs": ["Mint of the print edition NFT"]
         },
         {
           "name": "masterEditionMint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of the original/master NFT"
-          ]
+          "docs": ["Mint of the original/master NFT"]
         },
         {
           "name": "printEditionTokenAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account the print edition NFT is in"
-          ]
+          "docs": ["Token account the print edition NFT is in"]
         },
         {
           "name": "masterEditionTokenAccount",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token account the Master Edition NFT is in"
-          ]
+          "docs": ["Token account the Master Edition NFT is in"]
         },
         {
           "name": "masterEditionAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "MasterEdition2 of the original NFT"
-          ]
+          "docs": ["MasterEdition2 of the original NFT"]
         },
         {
           "name": "printEditionAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Print Edition account of the NFT"
-          ]
+          "docs": ["Print Edition account of the NFT"]
         },
         {
           "name": "editionMarkerAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Edition Marker PDA of the NFT"
-          ]
+          "docs": ["Edition Marker PDA of the NFT"]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "SPL Token Program"
-          ]
+          "docs": ["SPL Token Program"]
         }
       ],
       "args": [],
@@ -2637,74 +2153,56 @@
           "name": "escrow",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Escrow account"
-          ]
+          "docs": ["Escrow account"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint account"
-          ]
+          "docs": ["Mint account"]
         },
         {
           "name": "tokenAccount",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token account of the token"
-          ]
+          "docs": ["Token account of the token"]
         },
         {
           "name": "edition",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Edition account"
-          ]
+          "docs": ["Edition account"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Wallet paying for the transaction and new account"
-          ]
+          "docs": ["Wallet paying for the transaction and new account"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         },
         {
           "name": "authority",
           "isMut": false,
           "isSigner": true,
           "isOptional": true,
-          "docs": [
-            "Authority/creator of the escrow account"
-          ]
+          "docs": ["Authority/creator of the escrow account"]
         }
       ],
       "args": [],
@@ -2721,65 +2219,49 @@
           "name": "escrow",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Escrow account"
-          ]
+          "docs": ["Escrow account"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint account"
-          ]
+          "docs": ["Mint account"]
         },
         {
           "name": "tokenAccount",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token account"
-          ]
+          "docs": ["Token account"]
         },
         {
           "name": "edition",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Edition account"
-          ]
+          "docs": ["Edition account"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Wallet paying for the transaction and new account"
-          ]
+          "docs": ["Wallet paying for the transaction and new account"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         }
       ],
       "args": [],
@@ -2795,106 +2277,80 @@
           "name": "escrow",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Escrow account"
-          ]
+          "docs": ["Escrow account"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Wallet paying for the transaction and new account"
-          ]
+          "docs": ["Wallet paying for the transaction and new account"]
         },
         {
           "name": "attributeMint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint account for the new attribute"
-          ]
+          "docs": ["Mint account for the new attribute"]
         },
         {
           "name": "attributeSrc",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account source for the new attribute"
-          ]
+          "docs": ["Token account source for the new attribute"]
         },
         {
           "name": "attributeDst",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account, owned by TM, destination for the new attribute"
-          ]
+          "docs": ["Token account, owned by TM, destination for the new attribute"]
         },
         {
           "name": "escrowMint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint account that the escrow is attached"
-          ]
+          "docs": ["Mint account that the escrow is attached"]
         },
         {
           "name": "escrowAccount",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token account that holds the token the escrow is attached to"
-          ]
+          "docs": ["Token account that holds the token the escrow is attached to"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "ataProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Associated Token program"
-          ]
+          "docs": ["Associated Token program"]
         },
         {
           "name": "tokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         },
         {
           "name": "authority",
           "isMut": false,
           "isSigner": true,
           "isOptional": true,
-          "docs": [
-            "Authority/creator of the escrow account"
-          ]
+          "docs": ["Authority/creator of the escrow account"]
         }
       ],
       "args": [
@@ -2918,120 +2374,92 @@
           "name": "authority",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Asset owner or Utility delegate"
-          ]
+          "docs": ["Asset owner or Utility delegate"]
         },
         {
           "name": "collectionMetadata",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Metadata of the Collection"
-          ]
+          "docs": ["Metadata of the Collection"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "edition",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Edition of the asset"
-          ]
+          "docs": ["Edition of the asset"]
         },
         {
           "name": "mint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Mint of token asset"
-          ]
+          "docs": ["Mint of token asset"]
         },
         {
           "name": "token",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account to close"
-          ]
+          "docs": ["Token account to close"]
         },
         {
           "name": "masterEdition",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Master edition account"
-          ]
+          "docs": ["Master edition account"]
         },
         {
           "name": "masterEditionMint",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Master edition mint of the asset"
-          ]
+          "docs": ["Master edition mint of the asset"]
         },
         {
           "name": "masterEditionToken",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Master edition token account"
-          ]
+          "docs": ["Master edition token account"]
         },
         {
           "name": "editionMarker",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Edition marker account"
-          ]
+          "docs": ["Edition marker account"]
         },
         {
           "name": "tokenRecord",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token record account"
-          ]
+          "docs": ["Token record account"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "SPL Token Program"
-          ]
+          "docs": ["SPL Token Program"]
         }
       ],
       "args": [
@@ -3071,57 +2499,43 @@
           "name": "mint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Mint of token asset"
-          ]
+          "docs": ["Mint of token asset"]
         },
         {
           "name": "authority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Mint authority"
-          ]
+          "docs": ["Mint authority"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Update authority for the metadata account"
-          ]
+          "docs": ["Update authority for the metadata account"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "SPL Token program"
-          ]
+          "docs": ["SPL Token program"]
         }
       ],
       "args": [
@@ -3144,127 +2558,97 @@
           "name": "token",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token or Associated Token account"
-          ]
+          "docs": ["Token or Associated Token account"]
         },
         {
           "name": "tokenOwner",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Owner of the token account"
-          ]
+          "docs": ["Owner of the token account"]
         },
         {
           "name": "metadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Metadata account (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata account (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "masterEdition",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Master Edition account"
-          ]
+          "docs": ["Master Edition account"]
         },
         {
           "name": "tokenRecord",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token record account"
-          ]
+          "docs": ["Token record account"]
         },
         {
           "name": "mint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Mint of token asset"
-          ]
+          "docs": ["Mint of token asset"]
         },
         {
           "name": "authority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "(Mint or Update) authority"
-          ]
+          "docs": ["(Mint or Update) authority"]
         },
         {
           "name": "delegateRecord",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Metadata delegate record"
-          ]
+          "docs": ["Metadata delegate record"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "SPL Token program"
-          ]
+          "docs": ["SPL Token program"]
         },
         {
           "name": "splAtaProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "SPL Associated Token Account program"
-          ]
+          "docs": ["SPL Associated Token Account program"]
         },
         {
           "name": "authorizationRulesProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules program"
-          ]
+          "docs": ["Token Authorization Rules program"]
         },
         {
           "name": "authorizationRules",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules account"
-          ]
+          "docs": ["Token Authorization Rules account"]
         }
       ],
       "args": [
@@ -3288,119 +2672,91 @@
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Delegate record account"
-          ]
+          "docs": ["Delegate record account"]
         },
         {
           "name": "delegate",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Owner of the delegated account"
-          ]
+          "docs": ["Owner of the delegated account"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "masterEdition",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Master Edition account"
-          ]
+          "docs": ["Master Edition account"]
         },
         {
           "name": "tokenRecord",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token record account"
-          ]
+          "docs": ["Token record account"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of metadata"
-          ]
+          "docs": ["Mint of metadata"]
         },
         {
           "name": "token",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token account of mint"
-          ]
+          "docs": ["Token account of mint"]
         },
         {
           "name": "authority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Update authority or token owner"
-          ]
+          "docs": ["Update authority or token owner"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System Program"
-          ]
+          "docs": ["System Program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "SPL Token Program"
-          ]
+          "docs": ["SPL Token Program"]
         },
         {
           "name": "authorizationRulesProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules Program"
-          ]
+          "docs": ["Token Authorization Rules Program"]
         },
         {
           "name": "authorizationRules",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules account"
-          ]
+          "docs": ["Token Authorization Rules account"]
         }
       ],
       "args": [
@@ -3424,119 +2780,91 @@
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Delegate record account"
-          ]
+          "docs": ["Delegate record account"]
         },
         {
           "name": "delegate",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Owner of the delegated account"
-          ]
+          "docs": ["Owner of the delegated account"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "masterEdition",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Master Edition account"
-          ]
+          "docs": ["Master Edition account"]
         },
         {
           "name": "tokenRecord",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token record account"
-          ]
+          "docs": ["Token record account"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of metadata"
-          ]
+          "docs": ["Mint of metadata"]
         },
         {
           "name": "token",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token account of mint"
-          ]
+          "docs": ["Token account of mint"]
         },
         {
           "name": "authority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Update authority or token owner"
-          ]
+          "docs": ["Update authority or token owner"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System Program"
-          ]
+          "docs": ["System Program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "SPL Token Program"
-          ]
+          "docs": ["SPL Token Program"]
         },
         {
           "name": "authorizationRulesProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules Program"
-          ]
+          "docs": ["Token Authorization Rules Program"]
         },
         {
           "name": "authorizationRules",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules account"
-          ]
+          "docs": ["Token Authorization Rules account"]
         }
       ],
       "args": [
@@ -3559,111 +2887,85 @@
           "name": "authority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Delegate or freeze authority"
-          ]
+          "docs": ["Delegate or freeze authority"]
         },
         {
           "name": "tokenOwner",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token owner account"
-          ]
+          "docs": ["Token owner account"]
         },
         {
           "name": "token",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account"
-          ]
+          "docs": ["Token account"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint account"
-          ]
+          "docs": ["Mint account"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "edition",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Edition account"
-          ]
+          "docs": ["Edition account"]
         },
         {
           "name": "tokenRecord",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token record account"
-          ]
+          "docs": ["Token record account"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "SPL Token Program"
-          ]
+          "docs": ["SPL Token Program"]
         },
         {
           "name": "authorizationRulesProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules Program"
-          ]
+          "docs": ["Token Authorization Rules Program"]
         },
         {
           "name": "authorizationRules",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules account"
-          ]
+          "docs": ["Token Authorization Rules account"]
         }
       ],
       "args": [
@@ -3686,111 +2988,85 @@
           "name": "authority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Delegate or freeze authority"
-          ]
+          "docs": ["Delegate or freeze authority"]
         },
         {
           "name": "tokenOwner",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token owner account"
-          ]
+          "docs": ["Token owner account"]
         },
         {
           "name": "token",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account"
-          ]
+          "docs": ["Token account"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint account"
-          ]
+          "docs": ["Mint account"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "edition",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Edition account"
-          ]
+          "docs": ["Edition account"]
         },
         {
           "name": "tokenRecord",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token record account"
-          ]
+          "docs": ["Token record account"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "SPL Token Program"
-          ]
+          "docs": ["SPL Token Program"]
         },
         {
           "name": "authorizationRulesProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules Program"
-          ]
+          "docs": ["Token Authorization Rules Program"]
         },
         {
           "name": "authorizationRules",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules account"
-          ]
+          "docs": ["Token Authorization Rules account"]
         }
       ],
       "args": [
@@ -3813,123 +3089,93 @@
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "edition",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Edition account"
-          ]
+          "docs": ["Edition account"]
         },
         {
           "name": "token",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account"
-          ]
+          "docs": ["Token account"]
         },
         {
           "name": "tokenOwner",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token account owner"
-          ]
+          "docs": ["Token account owner"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint account"
-          ]
+          "docs": ["Mint account"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "authority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Update authority"
-          ]
+          "docs": ["Update authority"]
         },
         {
           "name": "collectionMetadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Collection metadata account"
-          ]
+          "docs": ["Collection metadata account"]
         },
         {
           "name": "delegateRecord",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Delegate record account"
-          ]
+          "docs": ["Delegate record account"]
         },
         {
           "name": "tokenRecord",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token record account"
-          ]
+          "docs": ["Token record account"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instruction sysvar account"
-          ]
+          "docs": ["Instruction sysvar account"]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "SPL Token Program"
-          ]
+          "docs": ["SPL Token Program"]
         },
         {
           "name": "authorizationRulesProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules Program"
-          ]
+          "docs": ["Token Authorization Rules Program"]
         },
         {
           "name": "authorizationRules",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules account"
-          ]
+          "docs": ["Token Authorization Rules account"]
         }
       ],
       "args": [],
@@ -3945,142 +3191,108 @@
           "name": "token",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account"
-          ]
+          "docs": ["Token account"]
         },
         {
           "name": "tokenOwner",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token account owner"
-          ]
+          "docs": ["Token account owner"]
         },
         {
           "name": "destination",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Destination token account"
-          ]
+          "docs": ["Destination token account"]
         },
         {
           "name": "destinationOwner",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Destination token account owner"
-          ]
+          "docs": ["Destination token account owner"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint of token asset"
-          ]
+          "docs": ["Mint of token asset"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["Metadata (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "edition",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Edition of token asset"
-          ]
+          "docs": ["Edition of token asset"]
         },
         {
           "name": "ownerTokenRecord",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Owner token record account"
-          ]
+          "docs": ["Owner token record account"]
         },
         {
           "name": "destinationTokenRecord",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Destination token record account"
-          ]
+          "docs": ["Destination token record account"]
         },
         {
           "name": "authority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Transfer authority (token owner or delegate)"
-          ]
+          "docs": ["Transfer authority (token owner or delegate)"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System Program"
-          ]
+          "docs": ["System Program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "SPL Token Program"
-          ]
+          "docs": ["SPL Token Program"]
         },
         {
           "name": "splAtaProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "SPL Associated Token Account program"
-          ]
+          "docs": ["SPL Associated Token Account program"]
         },
         {
           "name": "authorizationRulesProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules Program"
-          ]
+          "docs": ["Token Authorization Rules Program"]
         },
         {
           "name": "authorizationRules",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules account"
-          ]
+          "docs": ["Token Authorization Rules account"]
         }
       ],
       "args": [
@@ -4103,94 +3315,72 @@
           "name": "authority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Update authority or delegate"
-          ]
+          "docs": ["Update authority or delegate"]
         },
         {
           "name": "delegateRecord",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Delegate record PDA"
-          ]
+          "docs": ["Delegate record PDA"]
         },
         {
           "name": "token",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token account"
-          ]
+          "docs": ["Token account"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint account"
-          ]
+          "docs": ["Mint account"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "edition",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Edition account"
-          ]
+          "docs": ["Edition account"]
         },
         {
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         },
         {
           "name": "authorizationRulesProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules Program"
-          ]
+          "docs": ["Token Authorization Rules Program"]
         },
         {
           "name": "authorizationRules",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules account"
-          ]
+          "docs": ["Token Authorization Rules account"]
         }
       ],
       "args": [
@@ -4213,103 +3403,79 @@
           "name": "authority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Token owner or delegate"
-          ]
+          "docs": ["Token owner or delegate"]
         },
         {
           "name": "delegateRecord",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Delegate record PDA"
-          ]
+          "docs": ["Delegate record PDA"]
         },
         {
           "name": "token",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token account"
-          ]
+          "docs": ["Token account"]
         },
         {
           "name": "mint",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Mint account"
-          ]
+          "docs": ["Mint account"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "edition",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Edition account"
-          ]
+          "docs": ["Edition account"]
         },
         {
           "name": "payer",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Payer"
-          ]
+          "docs": ["Payer"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "SPL Token Program"
-          ]
+          "docs": ["SPL Token Program"]
         },
         {
           "name": "authorizationRulesProgram",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules Program"
-          ]
+          "docs": ["Token Authorization Rules Program"]
         },
         {
           "name": "authorizationRules",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token Authorization Rules account"
-          ]
+          "docs": ["Token Authorization Rules account"]
         }
       ],
       "args": [
@@ -4332,69 +3498,53 @@
           "name": "authority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Creator to verify, collection update authority or delegate"
-          ]
+          "docs": ["Creator to verify, collection update authority or delegate"]
         },
         {
           "name": "delegateRecord",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Delegate record PDA"
-          ]
+          "docs": ["Delegate record PDA"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "collectionMint",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Mint of the Collection"
-          ]
+          "docs": ["Mint of the Collection"]
         },
         {
           "name": "collectionMetadata",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Metadata Account of the Collection"
-          ]
+          "docs": ["Metadata Account of the Collection"]
         },
         {
           "name": "collectionMasterEdition",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Master Edition Account of the Collection Token"
-          ]
+          "docs": ["Master Edition Account of the Collection Token"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         }
       ],
       "args": [
@@ -4426,51 +3576,39 @@
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Delegate record PDA"
-          ]
+          "docs": ["Delegate record PDA"]
         },
         {
           "name": "metadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Metadata account"
-          ]
+          "docs": ["Metadata account"]
         },
         {
           "name": "collectionMint",
           "isMut": false,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Mint of the Collection"
-          ]
+          "docs": ["Mint of the Collection"]
         },
         {
           "name": "collectionMetadata",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Metadata Account of the Collection"
-          ]
+          "docs": ["Metadata Account of the Collection"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         }
       ],
       "args": [
@@ -4493,17 +3631,13 @@
           "name": "authority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Authority to collect fees"
-          ]
+          "docs": ["Authority to collect fees"]
         },
         {
           "name": "pdaAccount",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "PDA to retrieve fees from"
-          ]
+          "docs": ["PDA to retrieve fees from"]
         }
       ],
       "args": [],
@@ -4519,58 +3653,44 @@
           "name": "editionMetadata",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "New Metadata key (pda of ['metadata', program id, mint id])"
-          ]
+          "docs": ["New Metadata key (pda of ['metadata', program id, mint id])"]
         },
         {
           "name": "edition",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "New Edition (pda of ['metadata', program id, mint id, 'edition'])"
-          ]
+          "docs": ["New Edition (pda of ['metadata', program id, mint id, 'edition'])"]
         },
         {
           "name": "editionMint",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Mint of new token - THIS WILL TRANSFER AUTHORITY AWAY FROM THIS KEY"
-          ]
+          "docs": ["Mint of new token - THIS WILL TRANSFER AUTHORITY AWAY FROM THIS KEY"]
         },
         {
           "name": "editionTokenAccountOwner",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Owner of the token account of new token"
-          ]
+          "docs": ["Owner of the token account of new token"]
         },
         {
           "name": "editionTokenAccount",
           "isMut": true,
           "isSigner": false,
-          "docs": [
-            "Token account of new token"
-          ]
+          "docs": ["Token account of new token"]
         },
         {
           "name": "editionMintAuthority",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "Mint authority of new mint"
-          ]
+          "docs": ["Mint authority of new mint"]
         },
         {
           "name": "editionTokenRecord",
           "isMut": true,
           "isSigner": false,
           "isOptional": true,
-          "docs": [
-            "Token record account"
-          ]
+          "docs": ["Token record account"]
         },
         {
           "name": "masterEdition",
@@ -4592,73 +3712,55 @@
           "name": "payer",
           "isMut": true,
           "isSigner": true,
-          "docs": [
-            "payer"
-          ]
+          "docs": ["payer"]
         },
         {
           "name": "masterTokenAccountOwner",
           "isMut": false,
           "isSigner": true,
-          "docs": [
-            "owner of token account containing master token"
-          ]
+          "docs": ["owner of token account containing master token"]
         },
         {
           "name": "masterTokenAccount",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "token account containing token from master metadata mint"
-          ]
+          "docs": ["token account containing token from master metadata mint"]
         },
         {
           "name": "masterMetadata",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Master record metadata account"
-          ]
+          "docs": ["Master record metadata account"]
         },
         {
           "name": "updateAuthority",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "The update authority of the master edition."
-          ]
+          "docs": ["The update authority of the master edition."]
         },
         {
           "name": "splTokenProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Token program"
-          ]
+          "docs": ["Token program"]
         },
         {
           "name": "splAtaProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "SPL Associated Token Account program"
-          ]
+          "docs": ["SPL Associated Token Account program"]
         },
         {
           "name": "sysvarInstructions",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "Instructions sysvar account"
-          ]
+          "docs": ["Instructions sysvar account"]
         },
         {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false,
-          "docs": [
-            "System program"
-          ]
+          "docs": ["System program"]
         }
       ],
       "args": [
@@ -4766,10 +3868,7 @@
           {
             "name": "ledger",
             "type": {
-              "array": [
-                "u8",
-                31
-              ]
+              "array": ["u8", 31]
             }
           }
         ]
@@ -5513,20 +4612,14 @@
           {
             "name": "leaf",
             "type": {
-              "array": [
-                "u8",
-                32
-              ]
+              "array": ["u8", 32]
             }
           },
           {
             "name": "proof",
             "type": {
               "vec": {
-                "array": [
-                  "u8",
-                  32
-                ]
+                "array": ["u8", 32]
               }
             }
           }
@@ -6331,9 +5424,7 @@
           },
           {
             "name": "Set",
-            "fields": [
-              "publicKey"
-            ]
+            "fields": ["publicKey"]
           }
         ]
       }
@@ -6535,9 +5626,7 @@
           },
           {
             "name": "Creator",
-            "fields": [
-              "publicKey"
-            ]
+            "fields": ["publicKey"]
           }
         ]
       }
@@ -6552,9 +5641,7 @@
           },
           {
             "name": "Limited",
-            "fields": [
-              "u64"
-            ]
+            "fields": ["u64"]
           },
           {
             "name": "Unlimited"
@@ -6709,9 +5796,7 @@
         "variants": [
           {
             "name": "Pubkey",
-            "fields": [
-              "publicKey"
-            ]
+            "fields": ["publicKey"]
           },
           {
             "name": "Seeds",
@@ -6731,9 +5816,7 @@
           },
           {
             "name": "Number",
-            "fields": [
-              "u64"
-            ]
+            "fields": ["u64"]
           }
         ]
       }
@@ -7730,7 +6813,7 @@
   ],
   "metadata": {
     "origin": "shank",
-    "address": "meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C",
+    "address": "MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ",
     "binaryVersion": "0.2.0",
     "libVersion": "0.2.0"
   }

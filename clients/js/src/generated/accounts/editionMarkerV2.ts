@@ -121,7 +121,7 @@ export function getEditionMarkerV2GpaBuilder(
 ) {
   const programId = context.programs.getPublicKey(
     'mplTokenMetadata',
-    'meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'
+    'MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ'
   );
   return gpaBuilder(context, programId)
     .registerFields<{ key: KeyArgs; ledger: Uint8Array }>({
@@ -142,7 +142,7 @@ export function findEditionMarkerV2Pda(
 ): Pda {
   const programId = context.programs.getPublicKey(
     'mplTokenMetadata',
-    'meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'
+    'MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ'
   );
   return context.eddsa.findPda(programId, [
     string({ size: 'variable' }).serialize('metadata'),

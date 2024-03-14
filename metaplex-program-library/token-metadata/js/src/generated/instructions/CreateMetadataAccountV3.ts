@@ -78,7 +78,7 @@ export const createMetadataAccountV3InstructionDiscriminator = 33;
 export function createCreateMetadataAccountV3Instruction(
   accounts: CreateMetadataAccountV3InstructionAccounts,
   args: CreateMetadataAccountV3InstructionArgs,
-  programId = new web3.PublicKey('meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'),
+  programId = new web3.PublicKey('MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ'),
 ) {
   const [data] = CreateMetadataAccountV3Struct.serialize({
     instructionDiscriminator: createMetadataAccountV3InstructionDiscriminator,

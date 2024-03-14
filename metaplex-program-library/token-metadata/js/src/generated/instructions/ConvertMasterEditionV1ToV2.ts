@@ -44,7 +44,7 @@ export const convertMasterEditionV1ToV2InstructionDiscriminator = 12;
  */
 export function createConvertMasterEditionV1ToV2Instruction(
   accounts: ConvertMasterEditionV1ToV2InstructionAccounts,
-  programId = new web3.PublicKey('meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'),
+  programId = new web3.PublicKey('MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ'),
 ) {
   const [data] = ConvertMasterEditionV1ToV2Struct.serialize({
     instructionDiscriminator: convertMasterEditionV1ToV2InstructionDiscriminator,

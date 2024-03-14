@@ -23,7 +23,7 @@ export const CANDY_MACHINE_PROGRAM_V2_ID = new PublicKey(
   'cndy3Z4yapfJBmL3ShUp5exZKqR3z33thTzeNMm2gRZ',
 );
 export const TOKEN_METADATA_PROGRAM_ID = new PublicKey(
-  'meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C',
+  'MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ',
 );
 export const SPL_ASSOCIATED_TOKEN_ACCOUNT_PROGRAM_ID = new PublicKey(
   'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL',

@@ -62,7 +62,7 @@ export const deprecatedCreateMasterEditionInstructionDiscriminator = 2;
  */
 export function createDeprecatedCreateMasterEditionInstruction(
   accounts: DeprecatedCreateMasterEditionInstructionAccounts,
-  programId = new web3.PublicKey('meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'),
+  programId = new web3.PublicKey('MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ'),
 ) {
   const [data] = DeprecatedCreateMasterEditionStruct.serialize({
     instructionDiscriminator: deprecatedCreateMasterEditionInstructionDiscriminator,

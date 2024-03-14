@@ -43,7 +43,7 @@ export const signMetadataInstructionDiscriminator = 7;
  */
 export function createSignMetadataInstruction(
   accounts: SignMetadataInstructionAccounts,
-  programId = new web3.PublicKey('meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'),
+  programId = new web3.PublicKey('MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ'),
 ) {
   const [data] = SignMetadataStruct.serialize({
     instructionDiscriminator: signMetadataInstructionDiscriminator,

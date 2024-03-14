@@ -28,7 +28,7 @@ const RULE_SET_NAME: &str = "Metaplex Royalty RuleSet Dev";
 // Define Program Allow List
 // --------------------------------
 const ROOSTER_PROGRAM_ID: Pubkey = pubkey!("Roostrnex2Z9Y2XZC49sFAdZARP8E4iFpEnZC5QJWdz");
-const TOKEN_METADATA_PROGRAM_ID: Pubkey = pubkey!("meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C");
+const TOKEN_METADATA_PROGRAM_ID: Pubkey = pubkey!("MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ");
 const TOKEN_AUTH_RULES_ID: Pubkey = pubkey!("auth9SigNpDKz4sJJ1DfCTuZrZNSAgh9sFD3rboVmgg");
 
 const TRANSFER_PROGRAM_BASE_ALLOW_LIST: [Pubkey; 3] = [

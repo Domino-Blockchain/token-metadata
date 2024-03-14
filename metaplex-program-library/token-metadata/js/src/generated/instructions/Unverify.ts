@@ -74,7 +74,7 @@ export const unverifyInstructionDiscriminator = 53;
 export function createUnverifyInstruction(
   accounts: UnverifyInstructionAccounts,
   args: UnverifyInstructionArgs,
-  programId = new web3.PublicKey('meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'),
+  programId = new web3.PublicKey('MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ'),
 ) {
   const [data] = UnverifyStruct.serialize({
     instructionDiscriminator: unverifyInstructionDiscriminator,

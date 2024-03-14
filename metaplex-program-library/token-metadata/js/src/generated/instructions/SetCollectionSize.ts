@@ -71,7 +71,7 @@ export const setCollectionSizeInstructionDiscriminator = 34;
 export function createSetCollectionSizeInstruction(
   accounts: SetCollectionSizeInstructionAccounts,
   args: SetCollectionSizeInstructionArgs,
-  programId = new web3.PublicKey('meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'),
+  programId = new web3.PublicKey('MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ'),
 ) {
   const [data] = SetCollectionSizeStruct.serialize({
     instructionDiscriminator: setCollectionSizeInstructionDiscriminator,

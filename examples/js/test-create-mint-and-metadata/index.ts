@@ -14,15 +14,15 @@ const connection = new Connection("http://127.0.0.1:8899", "confirmed");
 // 4EmLFkzs6evHdvMC8EuNLfbZgr1zww6VVjkVRL4nqUZ6
 const mintOwner = Keypair.fromSecretKey(
   new Uint8Array([
-    138, 172, 12, 86, 153, 77, 250, 17, 242, 15, 52, 152, 66, 200, 139, 199, 14,
-    53, 196, 146, 149, 203, 54, 203, 22, 170, 4, 198, 234, 224, 228, 168, 48,
-    25, 188, 212, 156, 89, 87, 122, 22, 95, 119, 79, 66, 245, 22, 200, 210, 28,
-    78, 245, 31, 41, 155, 135, 148, 179, 197, 111, 3, 227, 243, 1,
+    138, 172, 12, 86, 153, 77, 250, 17, 242, 15, 52, 152, 66, 200, 139, 199, 14, 53, 196,
+    146, 149, 203, 54, 203, 22, 170, 4, 198, 234, 224, 228, 168, 48, 25, 188, 212, 156,
+    89, 87, 122, 22, 95, 119, 79, 66, 245, 22, 200, 210, 28, 78, 245, 31, 41, 155, 135,
+    148, 179, 197, 111, 3, 227, 243, 1,
   ])
 );
 
 const metaplexTokenMetadataProgram = new PublicKey(
-  "meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C"
+  "MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ"
 );
 
 const createMetadataAccount = async (
@@ -68,11 +68,7 @@ const createMetadataAccount = async (
 
 const getMetadataPDA = (mint: PublicKey): PublicKey => {
   return PublicKey.findProgramAddressSync(
-    [
-      Buffer.from("metadata"),
-      metaplexTokenMetadataProgram.toBuffer(),
-      mint.toBuffer(),
-    ],
+    [Buffer.from("metadata"), metaplexTokenMetadataProgram.toBuffer(), mint.toBuffer()],
     metaplexTokenMetadataProgram
   )[0];
 };
@@ -85,9 +81,7 @@ const addMetadata = async (mintAddress: PublicKey, connection: Connection) => {
     mintAddress,
     mintOwner.publicKey
   );
-  return await sendAndConfirmTransaction(connection, transactionToSend, [
-    mintOwner,
-  ]);
+  return await sendAndConfirmTransaction(connection, transactionToSend, [mintOwner]);
 };
 
 (async () => {

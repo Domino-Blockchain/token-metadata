@@ -79,7 +79,7 @@ export function unverifySizedCollectionItem(
   // Program ID.
   const programId = context.programs.getPublicKey(
     'mplTokenMetadata',
-    'meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'
+    'MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ'
   );
 
   // Accounts.

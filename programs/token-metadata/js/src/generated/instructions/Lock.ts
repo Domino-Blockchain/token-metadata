@@ -86,7 +86,7 @@ export const lockInstructionDiscriminator = 46;
 export function createLockInstruction(
   accounts: LockInstructionAccounts,
   args: LockInstructionArgs,
-  programId = new web3.PublicKey('meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'),
+  programId = new web3.PublicKey('MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ'),
 ) {
   const [data] = LockStruct.serialize({
     instructionDiscriminator: lockInstructionDiscriminator,

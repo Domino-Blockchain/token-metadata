@@ -72,7 +72,7 @@ export class EditionMarkerV2 implements EditionMarkerV2Args {
    * @param programId - the program that owns the accounts we are filtering
    */
   static gpaBuilder(
-    programId: web3.PublicKey = new web3.PublicKey('meta3c863KN6CX6HXzfmDHbURDkfJ5HMCwUT5SEqu5C'),
+    programId: web3.PublicKey = new web3.PublicKey('MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ'),
   ) {
     return beetSolana.GpaBuilder.fromStruct(programId, editionMarkerV2Beet);
   }
