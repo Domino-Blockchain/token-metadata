@@ -199,7 +199,7 @@ impl ApproveUseAuthorityBuilder {
         self.burner = Some(burner);
         self
     }
-    /// `[optional account, default to 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA']`
+    /// `[optional account, default to 'TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s']`
     /// Token program
     #[inline(always)]
     pub fn token_program(&mut self, token_program: solana_program::pubkey::Pubkey) -> &mut Self {
@@ -251,7 +251,7 @@ impl ApproveUseAuthorityBuilder {
             mint: self.mint.expect("mint is not set"),
             burner: self.burner.expect("burner is not set"),
             token_program: self.token_program.unwrap_or(solana_program::pubkey!(
-                "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+                "TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s"
             )),
             system_program: self
                 .system_program

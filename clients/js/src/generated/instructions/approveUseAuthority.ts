@@ -150,7 +150,7 @@ export function approveUseAuthority(
   if (!resolvedAccounts.tokenProgram.value) {
     resolvedAccounts.tokenProgram.value = context.programs.getPublicKey(
       'splToken',
-      'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'
+      'TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s'
     );
     resolvedAccounts.tokenProgram.isWritable = false;
   }

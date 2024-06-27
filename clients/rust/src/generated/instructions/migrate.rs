@@ -255,7 +255,7 @@ impl MigrateBuilder {
         self.sysvar_instructions = Some(sysvar_instructions);
         self
     }
-    /// `[optional account, default to 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA']`
+    /// `[optional account, default to 'TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s']`
     /// SPL Token Program
     #[inline(always)]
     pub fn spl_token_program(
@@ -317,7 +317,7 @@ impl MigrateBuilder {
                 "Sysvar1nstructions1111111111111111111111111"
             )),
             spl_token_program: self.spl_token_program.unwrap_or(solana_program::pubkey!(
-                "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+                "TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s"
             )),
             authorization_rules_program: self.authorization_rules_program,
             authorization_rules: self.authorization_rules,

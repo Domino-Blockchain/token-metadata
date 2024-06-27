@@ -238,7 +238,7 @@ export function revokeStandardV1(
   if (!resolvedAccounts.splTokenProgram.value) {
     resolvedAccounts.splTokenProgram.value = context.programs.getPublicKey(
       'splToken',
-      'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'
+      'TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s'
     );
     resolvedAccounts.splTokenProgram.isWritable = false;
   }

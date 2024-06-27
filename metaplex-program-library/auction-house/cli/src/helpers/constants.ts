@@ -26,10 +26,10 @@ export const TOKEN_METADATA_PROGRAM_ID = new PublicKey(
   'MetaXKaVt8cn9dGYns81au23cqBYUH4DU4WpC8tAbhQ',
 );
 export const SPL_ASSOCIATED_TOKEN_ACCOUNT_PROGRAM_ID = new PublicKey(
-  'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL',
+  'Dt8fRCpjeV6JDemhPmtcTKijgKdPxXHn9Wo9cXY5agtG',
 );
 export const TOKEN_PROGRAM_ID = new PublicKey(
-  'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA',
+  'TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s',
 );
 export const FAIR_LAUNCH_PROGRAM_ID = new PublicKey(
   'faircnAB9k59Y4TXmLabBULeuTLgV7TkGMGNkjnA15j',

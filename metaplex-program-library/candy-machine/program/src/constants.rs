@@ -25,7 +25,7 @@ pub const GUMDROP_ID: Pubkey =
     solana_program::pubkey!("gdrpGjVffourzkdDRrQmySw4aTHr8a3xmQzzxSwFD1a");
 pub const CUPCAKE_ID: Pubkey =
     solana_program::pubkey!("cakeGJxEdGpZ3MJP8sM3QypwzuzZpko1ueonUQgKLPE");
-pub const A_TOKEN: Pubkey = solana_program::pubkey!("ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL");
+pub const A_TOKEN: Pubkey = solana_program::pubkey!("Dt8fRCpjeV6JDemhPmtcTKijgKdPxXHn9Wo9cXY5agtG");
 pub const COMPUTE_BUDGET: Pubkey =
     solana_program::pubkey!("ComputeBudget111111111111111111111111111111");
 

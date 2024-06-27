@@ -138,7 +138,7 @@ impl BurnNftBuilder {
         self.master_edition_account = Some(master_edition_account);
         self
     }
-    /// `[optional account, default to 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA']`
+    /// `[optional account, default to 'TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s']`
     /// SPL Token Program
     #[inline(always)]
     pub fn spl_token_program(
@@ -179,7 +179,7 @@ impl BurnNftBuilder {
                 .master_edition_account
                 .expect("master_edition_account is not set"),
             spl_token_program: self.spl_token_program.unwrap_or(solana_program::pubkey!(
-                "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+                "TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s"
             )),
             collection_metadata: self.collection_metadata,
         };

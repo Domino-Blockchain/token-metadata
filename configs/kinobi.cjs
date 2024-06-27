@@ -55,10 +55,7 @@ kinobi.update(
       seeds: [
         ...metadataSeeds,
         k.stringConstantSeed("token_record"),
-        k.publicKeySeed(
-          "token",
-          "The address of the token account (ata or not)"
-        ),
+        k.publicKeySeed("token", "The address of the token account (ata or not)"),
       ],
     },
     metadataDelegateRecord: {
@@ -81,10 +78,7 @@ kinobi.update(
       seeds: [
         ...metadataSeeds,
         k.stringConstantSeed("collection_authority"),
-        k.publicKeySeed(
-          "collectionAuthority",
-          "The address of the collection authority"
-        ),
+        k.publicKeySeed("collectionAuthority", "The address of the collection authority"),
       ],
     },
     useAuthorityRecord: {
@@ -170,9 +164,7 @@ kinobi.update(
       accounts: {
         masterEdition: {
           defaultsTo: k.conditionalResolverDefault(
-            k.resolverDefault("resolveIsNonFungible", [
-              k.dependsOnArg("tokenStandard"),
-            ]),
+            k.resolverDefault("resolveIsNonFungible", [k.dependsOnArg("tokenStandard")]),
             {
               ifTrue: k.pdaDefault("masterEdition", {
                 seeds: { mint: k.accountDefault("mint") },
@@ -254,9 +246,7 @@ kinobi.update(
       accounts: {
         masterEdition: {
           defaultsTo: k.conditionalResolverDefault(
-            k.resolverDefault("resolveIsNonFungible", [
-              k.dependsOnArg("tokenStandard"),
-            ]),
+            k.resolverDefault("resolveIsNonFungible", [k.dependsOnArg("tokenStandard")]),
             {
               ifTrue: k.pdaDefault("masterEdition", {
                 seeds: { mint: k.accountDefault("mint") },
@@ -275,9 +265,7 @@ kinobi.update(
       accounts: {
         masterEdition: {
           defaultsTo: k.conditionalResolverDefault(
-            k.resolverDefault("resolveIsNonFungible", [
-              k.dependsOnArg("tokenStandard"),
-            ]),
+            k.resolverDefault("resolveIsNonFungible", [k.dependsOnArg("tokenStandard")]),
             {
               ifTrue: k.pdaDefault("masterEdition", {
                 seeds: { mint: k.accountDefault("mint") },
@@ -302,9 +290,7 @@ kinobi.update(
         },
         edition: {
           defaultsTo: k.conditionalResolverDefault(
-            k.resolverDefault("resolveIsNonFungible", [
-              k.dependsOnArg("tokenStandard"),
-            ]),
+            k.resolverDefault("resolveIsNonFungible", [k.dependsOnArg("tokenStandard")]),
             {
               ifTrue: k.pdaDefault("masterEdition", {
                 seeds: { mint: k.accountDefault("mint") },
@@ -328,7 +314,7 @@ kinobi.update(
             value: k.vEnum("TokenStandard", "ProgrammableNonFungible"),
             ifFalse: k.programDefault(
               "splToken",
-              "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+              "TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s"
             ),
           }),
         },
@@ -347,9 +333,7 @@ kinobi.update(
         },
         edition: {
           defaultsTo: k.conditionalResolverDefault(
-            k.resolverDefault("resolveIsNonFungible", [
-              k.dependsOnArg("tokenStandard"),
-            ]),
+            k.resolverDefault("resolveIsNonFungible", [k.dependsOnArg("tokenStandard")]),
             {
               ifTrue: k.pdaDefault("masterEdition", {
                 seeds: { mint: k.accountDefault("mint") },
@@ -373,7 +357,7 @@ kinobi.update(
             value: k.vEnum("TokenStandard", "ProgrammableNonFungible"),
             ifFalse: k.programDefault(
               "splToken",
-              "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+              "TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s"
             ),
           }),
         },
@@ -396,9 +380,7 @@ kinobi.update(
         },
         edition: {
           defaultsTo: k.conditionalResolverDefault(
-            k.resolverDefault("resolveIsNonFungible", [
-              k.dependsOnArg("tokenStandard"),
-            ]),
+            k.resolverDefault("resolveIsNonFungible", [k.dependsOnArg("tokenStandard")]),
             {
               ifTrue: k.pdaDefault("masterEdition", {
                 seeds: { mint: k.accountDefault("mint") },
@@ -620,7 +602,7 @@ const tokenDelegateDefaults = {
     splTokenProgram: {
       defaultsTo: k.programDefault(
         "splToken",
-        "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        "TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s"
       ),
     },
   },
@@ -688,9 +670,7 @@ const updateAsMetadataCollectionDelegateDefaults = (role) => ({
       }),
     },
     token:
-      role === "ProgrammableConfig"
-        ? { isOptional: false, defaultsTo: null }
-        : undefined,
+      role === "ProgrammableConfig" ? { isOptional: false, defaultsTo: null } : undefined,
   },
   args: {
     delegateMint: {
@@ -725,9 +705,7 @@ kinobi.update(
       accounts: {
         masterEdition: {
           defaultsTo: k.conditionalResolverDefault(
-            k.resolverDefault("resolveIsNonFungible", [
-              k.dependsOnArg("tokenStandard"),
-            ]),
+            k.resolverDefault("resolveIsNonFungible", [k.dependsOnArg("tokenStandard")]),
             {
               ifTrue: k.pdaDefault("masterEdition", {
                 seeds: { mint: k.accountDefault("mint") },
@@ -840,16 +818,14 @@ kinobi.update(
       },
     },
     // Update.
-    updateAsAuthorityItemDelegateV2:
-      updateAsMetadataDelegateDefaults("AuthorityItem"),
+    updateAsAuthorityItemDelegateV2: updateAsMetadataDelegateDefaults("AuthorityItem"),
     updateAsCollectionDelegateV2:
       updateAsMetadataCollectionDelegateDefaults("Collection"),
     updateAsDataDelegateV2: updateAsMetadataCollectionDelegateDefaults("Data"),
     updateAsProgrammableConfigDelegateV2:
       updateAsMetadataCollectionDelegateDefaults("ProgrammableConfig"),
     updateAsDataItemDelegateV2: updateAsMetadataDelegateDefaults("DataItem"),
-    updateAsCollectionItemDelegateV2:
-      updateAsMetadataDelegateDefaults("CollectionItem"),
+    updateAsCollectionItemDelegateV2: updateAsMetadataDelegateDefaults("CollectionItem"),
     updateAsProgrammableConfigItemDelegateV2: updateAsMetadataDelegateDefaults(
       "ProgrammableConfigItem"
     ),
@@ -868,14 +844,11 @@ kinobi.update(
       },
     },
     delegateLockedTransferV1: tokenDelegateDefaults,
-    delegateProgrammableConfigV1:
-      metadataDelegateDefaults("ProgrammableConfig"),
+    delegateProgrammableConfigV1: metadataDelegateDefaults("ProgrammableConfig"),
     delegateAuthorityItemV1: metadataDelegateDefaults("AuthorityItem"),
     delegateDataItemV1: metadataDelegateDefaults("DataItem"),
     delegateCollectionItemV1: metadataDelegateDefaults("CollectionItem"),
-    delegateProgrammableConfigItemV1: metadataDelegateDefaults(
-      "ProgrammableConfigItem"
-    ),
+    delegateProgrammableConfigItemV1: metadataDelegateDefaults("ProgrammableConfigItem"),
     // Revoke.
     revokeCollectionV1: metadataDelegateDefaults("Collection"),
     revokeSaleV1: tokenDelegateDefaults,
@@ -896,9 +869,7 @@ kinobi.update(
     revokeAuthorityItemV1: metadataDelegateDefaults("AuthorityItem"),
     revokeDataItemV1: metadataDelegateDefaults("DataItem"),
     revokeCollectionItemV1: metadataDelegateDefaults("CollectionItem"),
-    revokeProgrammableConfigItemV1: metadataDelegateDefaults(
-      "ProgrammableConfigItem"
-    ),
+    revokeProgrammableConfigItemV1: metadataDelegateDefaults("ProgrammableConfigItem"),
     // Verify collection.
     verifyCollectionV1: verifyCollectionDefaults,
     unverifyCollectionV1: verifyCollectionDefaults,

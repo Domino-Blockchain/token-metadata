@@ -324,7 +324,7 @@ impl TransferV1Builder {
         self.sysvar_instructions = Some(sysvar_instructions);
         self
     }
-    /// `[optional account, default to 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA']`
+    /// `[optional account, default to 'TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s']`
     /// SPL Token Program
     #[inline(always)]
     pub fn spl_token_program(
@@ -334,7 +334,7 @@ impl TransferV1Builder {
         self.spl_token_program = Some(spl_token_program);
         self
     }
-    /// `[optional account, default to 'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL']`
+    /// `[optional account, default to 'Dt8fRCpjeV6JDemhPmtcTKijgKdPxXHn9Wo9cXY5agtG']`
     /// SPL Associated Token Account program
     #[inline(always)]
     pub fn spl_ata_program(
@@ -411,10 +411,10 @@ impl TransferV1Builder {
                 "Sysvar1nstructions1111111111111111111111111"
             )),
             spl_token_program: self.spl_token_program.unwrap_or(solana_program::pubkey!(
-                "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+                "TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s"
             )),
             spl_ata_program: self.spl_ata_program.unwrap_or(solana_program::pubkey!(
-                "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+                "Dt8fRCpjeV6JDemhPmtcTKijgKdPxXHn9Wo9cXY5agtG"
             )),
             authorization_rules_program: self.authorization_rules_program,
             authorization_rules: self.authorization_rules,

@@ -37,7 +37,7 @@ use {
     std::str::FromStr,
 };
 
-const TOKEN_PROGRAM_PUBKEY: &str = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA";
+const TOKEN_PROGRAM_PUBKEY: &str = "TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s";
 fn puff_unpuffed_metadata(_app_matches: &ArgMatches, payer: Keypair, client: RpcClient) {
     let metadata_accounts = client
         .get_program_accounts(&mpl_token_metadata::id())

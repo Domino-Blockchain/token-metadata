@@ -176,14 +176,14 @@ impl UtilizeBuilder {
         self.owner = Some(owner);
         self
     }
-    /// `[optional account, default to 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA']`
+    /// `[optional account, default to 'TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s']`
     /// Token program
     #[inline(always)]
     pub fn token_program(&mut self, token_program: solana_program::pubkey::Pubkey) -> &mut Self {
         self.token_program = Some(token_program);
         self
     }
-    /// `[optional account, default to 'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL']`
+    /// `[optional account, default to 'Dt8fRCpjeV6JDemhPmtcTKijgKdPxXHn9Wo9cXY5agtG']`
     /// Associated Token program
     #[inline(always)]
     pub fn ata_program(&mut self, ata_program: solana_program::pubkey::Pubkey) -> &mut Self {
@@ -245,10 +245,10 @@ impl UtilizeBuilder {
             use_authority: self.use_authority.expect("use_authority is not set"),
             owner: self.owner.expect("owner is not set"),
             token_program: self.token_program.unwrap_or(solana_program::pubkey!(
-                "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+                "TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s"
             )),
             ata_program: self.ata_program.unwrap_or(solana_program::pubkey!(
-                "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+                "Dt8fRCpjeV6JDemhPmtcTKijgKdPxXHn9Wo9cXY5agtG"
             )),
             system_program: self
                 .system_program

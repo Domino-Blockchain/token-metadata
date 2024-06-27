@@ -244,7 +244,7 @@ export function lockV1(
     if (resolvedArgs.tokenStandard !== TokenStandard.ProgrammableNonFungible) {
       resolvedAccounts.splTokenProgram.value = context.programs.getPublicKey(
         'splToken',
-        'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'
+        'TokenAAGbeQq5tGW2r5RoR3oauzN2EkNFiHNPw9q34s'
       );
       resolvedAccounts.splTokenProgram.isWritable = false;
     }
